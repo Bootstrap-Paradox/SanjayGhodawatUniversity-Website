@@ -1,7 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
-
-
 // Sanjay Ghodawat University Website
 
 function App() {
