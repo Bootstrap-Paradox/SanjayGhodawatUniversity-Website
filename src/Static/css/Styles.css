@@ -246,4 +246,66 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.our-recruiters {
+  background-color: #F4F4F4;
+  position: relative;
+}
+
+.our-recruiters .title {
+  color: #1f1f1f;
+}
+
+.our-recruiters .carousel-indicators {
+  position: absolute;
+  bottom: -4rem;
+  margin-top: 4rem;
+}
+
+.our-recruiters .carousel-control-prev .carousel-control-prev-icon {
+  position: absolute;
+  bottom: -3.3rem;
+}
+
+.our-recruiters .carousel-control-next .carousel-control-next-icon {
+  position: absolute;
+  bottom: -3.3rem;
+}
+
+.our-recruiters .company-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: auto;
+  overflow-x: scroll;
+}
+
+.our-recruiters .company-card {
+  -webkit-box-shadow: 12px 12px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 12px 12px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 344px;
+  height: 225px;
+}
+
+.our-recruiters .company-card img {
+  border-radius: 8px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
 /*# sourceMappingURL=Styles.css.map */

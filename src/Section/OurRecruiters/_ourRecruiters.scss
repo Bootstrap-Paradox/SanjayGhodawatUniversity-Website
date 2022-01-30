@@ -1,0 +1,57 @@
+.our-recruiters{
+    background-color: #F4F4F4;
+    position:relative;
+
+
+
+    .title{
+        color: getColor(darkText);
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: -4rem;
+        margin-top: 4rem;
+
+    }
+
+    .carousel-control-prev{
+        .carousel-control-prev-icon{
+            position: absolute;
+            bottom: -3.3rem;
+        }
+    }
+
+    .carousel-control-next{
+        .carousel-control-next-icon{
+            position: absolute;
+            bottom: -3.3rem;
+        }
+    }
+
+    .company-carousel{
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        overflow-x: scroll;
+    }
+
+    .company-card{
+        box-shadow: $smooth-shadow-small;
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+
+        width: 344px;
+        height: 225px;
+
+        img{
+            border-radius: 8px;
+            object-fit: fill;
+
+        }
+    }
+}
