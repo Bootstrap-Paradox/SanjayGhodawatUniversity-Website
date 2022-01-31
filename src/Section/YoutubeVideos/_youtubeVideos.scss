@@ -1,0 +1,22 @@
+.video-component{
+
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    
+    iframe{
+        border-radius: 0.5rem;
+
+    }
+        
+    @media(min-width: 1100px){
+        height: 284px;
+        width: 473px;
+        
+    }
+}
+
+.video-components{
+    display: flex;
+    gap: 2rem;
+}

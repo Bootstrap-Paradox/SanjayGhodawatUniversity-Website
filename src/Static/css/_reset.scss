@@ -6,3 +6,26 @@
 body{
     font-family: 'Poppins';
 }
+
+.carousel{
+    .carousel-indicators{
+        position: absolute;
+        bottom: -4rem;
+        margin-top: 4rem;
+    }
+
+    .carousel-control-prev{
+        .carousel-control-prev-icon{
+            position: absolute;
+            bottom: -3.3rem;
+        }
+    }
+
+    .carousel-control-next{
+        .carousel-control-next-icon{
+            position: absolute;
+            bottom: -3.3rem;
+        }
+    }
+
+}
