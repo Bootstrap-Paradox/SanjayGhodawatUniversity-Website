@@ -434,4 +434,123 @@ body {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
 }
+
+.why-sgu .why-sgu-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content 1fr;
+      grid-template-rows: -webkit-max-content 1fr;
+      grid-template-rows: max-content 1fr;
+}
+
+@media (min-width: 1200px) {
+  .why-sgu .why-sgu-section {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+.why-sgu .why-sgu-section .why-content {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .why-sgu .why-sgu-section .why-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.why-sgu .why-sgu-section .why-content .description {
+  width: 90%;
+}
+
+@media (min-width: 1200px) {
+  .why-sgu .why-sgu-section .why-content .description {
+    font-weight: 450;
+    font-size: 1.2rem;
+  }
+}
+
+.why-sgu .why-sgu-section .why-highlights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+@media (min-width: 1200px) {
+  .why-sgu .why-sgu-section .why-highlights {
+    margin-top: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.why-sgu .why-sgu-section .why-highlights-block {
+  width: 277px;
+  height: 186px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  text-align: center;
+  background-color: #E31E24;
+  color: white;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  .why-sgu .why-sgu-section .why-highlights-block {
+    max-width: 277px;
+    max-height: 186px;
+    width: 13vw;
+  }
+}
+
+.why-sgu .why-sgu-section .why-highlights-block div {
+  margin: auto;
+}
+
+.why-sgu .why-sgu-section .why-highlights-block div .highlight {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.why-sgu .why-sgu-section .why-highlights-block div .description {
+  font-weight: 600;
+  width: 80%;
+  margin: auto;
+}
 /*# sourceMappingURL=Styles.css.map */
