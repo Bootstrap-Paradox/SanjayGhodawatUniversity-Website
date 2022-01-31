@@ -106,6 +106,8 @@
         .news-pill-inner-section{
             display: flex;
             flex-direction: column;
+            margin:auto;
+            justify-content: center;
 
             @media(min-width: 1300px){
                 flex-direction: row;
