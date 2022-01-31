@@ -22,7 +22,7 @@ export default function Leadership() {
 
 const LeadershipCarousel = () => {
     return (
-        <div id="carouselLeadershipIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carouselLeadershipIndicators" class="carousel carousel-custom carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselLeadershipIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselLeadershipIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

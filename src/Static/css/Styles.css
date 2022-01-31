@@ -7,18 +7,18 @@ body {
   font-family: 'Poppins';
 }
 
-.carousel .carousel-indicators {
+.carousel-custom .carousel-indicators {
   position: absolute;
   bottom: -4rem;
   margin-top: 4rem;
 }
 
-.carousel .carousel-control-prev .carousel-control-prev-icon {
+.carousel-custom .carousel-control-prev .carousel-control-prev-icon {
   position: absolute;
   bottom: -3.3rem;
 }
 
-.carousel .carousel-control-next .carousel-control-next-icon {
+.carousel-custom .carousel-control-next .carousel-control-next-icon {
   position: absolute;
   bottom: -3.3rem;
 }
@@ -435,6 +435,10 @@ body {
           transform: scale(1.35);
 }
 
+.why-sgu .title {
+  margin-bottom: 2rem;
+}
+
 .why-sgu .why-sgu-section {
   display: -ms-grid;
   display: grid;
@@ -552,5 +556,44 @@ body {
   font-weight: 600;
   width: 80%;
   margin: auto;
+}
+
+@media (max-width: 700px) {
+  .carousel-landing .carousel-inner .carousel-item img {
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-landing .carousel-inner .carousel-item img {
+    height: 757px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.carousel-landing .carousel-inner .carousel-item .carousel-caption {
+  background-color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #434343;
+  -webkit-box-shadow: 1.6px 1.7px 2.2px rgba(0, 0, 0, 0.013), 3.8px 4.2px 5.3px rgba(0, 0, 0, 0.015), 7.1px 7.9px 10px rgba(0, 0, 0, 0.016), 12.7px 14.1px 17.9px rgba(0, 0, 0, 0.019), 23.8px 26.3px 33.4px rgba(0, 0, 0, 0.028), 57px 63px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 1.6px 1.7px 2.2px rgba(0, 0, 0, 0.013), 3.8px 4.2px 5.3px rgba(0, 0, 0, 0.015), 7.1px 7.9px 10px rgba(0, 0, 0, 0.016), 12.7px 14.1px 17.9px rgba(0, 0, 0, 0.019), 23.8px 26.3px 33.4px rgba(0, 0, 0, 0.028), 57px 63px 80px rgba(0, 0, 0, 0.07);
+}
+
+.carousel-landing .carousel-indicators {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 12px 12px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 12px 12px 80px rgba(0, 0, 0, 0.07);
 }
 /*# sourceMappingURL=Styles.css.map */

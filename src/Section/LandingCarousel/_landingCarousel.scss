@@ -1,0 +1,45 @@
+
+
+.carousel-landing{
+
+    .carousel-inner{
+        .carousel-item{
+            img{
+                @media(max-width: 700px){
+                    height: 50vh;
+                    object-fit: cover;
+                }
+                @media(min-width: 1200px){
+                    height: 757px;
+                    object-fit: cover;
+                }
+            }
+
+            .carousel-caption{
+                background-color: white;
+                border-radius: 1rem;
+
+                cursor: pointer;
+
+                color: getColor(Text);
+
+                box-shadow: $smooth-shadow;
+            }
+        }
+    }
+
+
+
+    .carousel-indicators{
+        background-color: white;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        border-radius: 0.6rem;
+        box-shadow: $smooth-shadow-small;
+    }
+}
