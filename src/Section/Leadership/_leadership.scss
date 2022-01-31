@@ -1,0 +1,96 @@
+.leadership-section{
+
+
+    .leadership-frame{
+        $border-radius: 1rem;
+
+        border-radius: $border-radius;
+        box-shadow: $smooth-shadow-small;
+
+        width: 95vw;
+        height: 362px;
+
+        @media(min-width: 355px){
+            width: 339px;
+            height: 462px;
+        }
+
+        position: relative;
+        background-color: red;
+        
+        margin: auto;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            z-index: 1;
+            // bottom: 0;
+            // bottom: 0;
+        }
+
+        .textual{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            
+            
+            padding: 0.95rem;
+            // padding-bottom: 1rem;
+
+            @media(min-width: 355px){
+                padding: 0.95rem;
+                padding-bottom: 2rem;
+            }
+
+            border-radius: $border-radius;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(15,15,15, 0.9) 90%);
+
+            color: white;
+
+            display: grid;
+            grid-template-columns: 1fr max-content;
+
+            .info{
+
+                h4{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+    
+                p{
+                    color: #cccccc;
+                }
+            }
+
+            .icon{
+                background-color: white;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                align-self: end;
+                margin-bottom: 1.2rem;
+
+                // margin-top: 0.5rem;
+
+                svg{
+                    transform: scale(1.35);
+                }
+            }
+
+
+        }
+    }
+}
