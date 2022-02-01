@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from '../Component/navbar/navbar';
 import TopNavMenu from '../Component/navbar/topNavMenu';
 import LandingCarousel from '../Section/LandingCarousel/landingCarousel';
 import Leadership from '../Section/Leadership/leadership';
@@ -11,7 +12,7 @@ import '../Static/css/Styles.css'
 export default function Home() {
     return (
         <>
-            <TopNavMenu />
+            <NavBar />
             <LandingCarousel />
             <WhySgu />
             <NewsAndEvents />

@@ -18,6 +18,10 @@ $smooth-shadow:   1.6px 1.7px 2.2px rgba(0, 0, 0, 0.013),
 
 $smooth-shadow-small: 12px 12px 80px rgba(0, 0, 0, 0.07);
 
+@mixin testing(){
+    border: 0.3px dashed #ee7b7f;
+}
+
 @mixin paragraph-overflow($clamp:4){
     display: -webkit-box;
     -webkit-line-clamp: $clamp; 
