@@ -5,8 +5,9 @@
     }
 
     height: 34px;
-    background-color: red;
     width: 100%;
+
+    border-bottom: 0.01px solid #ccc;
 
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@
         margin-top: auto;
         margin-bottom: auto;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 0.9rem;
 
         &:last-child{
             margin-right: 12px;

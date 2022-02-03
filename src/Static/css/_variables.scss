@@ -15,8 +15,15 @@ $smooth-shadow:   1.6px 1.7px 2.2px rgba(0, 0, 0, 0.013),
                     12.7px 14.1px 17.9px rgba(0, 0, 0, 0.019),
                     23.8px 26.3px 33.4px rgba(0, 0, 0, 0.028),
                     57px 63px 80px rgba(0, 0, 0, 0.07);
+$smooth-shadow-hover: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                        0 12.5px 10px rgba(0, 0, 0, 0.06),
+                        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                        0 100px 80px rgba(0, 0, 0, 0.12);
 
 $smooth-shadow-small: 12px 12px 80px rgba(0, 0, 0, 0.07);
+// $smooth-shadow-hover: 0 0 16px rgba(33,33,33,.2);
 
 @mixin testing(){
     border: 0.3px dashed #ee7b7f;
@@ -29,6 +36,34 @@ $smooth-shadow-small: 12px 12px 80px rgba(0, 0, 0, 0.07);
     overflow: hidden;
     text-overflow: ellipsis;
 };
+
+@mixin underline-on-hover($background:getColor(lightText)){
+    text-decoration: none;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    position: relative;
+
+    &:after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: $background;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    &:hover:after{
+        width: 100%;
+        left: 0;
+    }
+
+}
 
 @function getColor($color){
     @return map-get($map: $colors, $key:$color );

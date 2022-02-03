@@ -1,21 +1,50 @@
-import React from 'react';
+import React, { createContext, useReducer, useState } from 'react';
 import TopNavMenu from './topNavMenu';
 
 import SGULogo from '../../Static/images/SGU Logo.png';
 import CallIcon from '../../Static/svg_components/callIcon'
+import menus from './menu';
+import NavigationMenu, { MobileNavigationMenu } from './navbarLogic';
+import { NavigationReducer } from './navbarReducer';
+import { useContext } from 'react/cjs/react.development';
+
+export const NavigationContext = createContext();
 
 export default function NavBar() {
 
+    const initialState = {
+        menu_data: menus,
+        seletedMainMenu: {},
+        navigationMenuOpen: false,
+        subNavigationMenuOpen: false,
+        nestedNavigationMenuOpen: false,
+        mainMenuSelected: "",
+        subMenuSelected: "",
+        nestedMenuSeleted: "",
+    }
+
+    const [navState, navDispatch] = useReducer(NavigationReducer, initialState);
+
+    const [toggleMobileNavigationOpen, setToggleMobileNavigationOpen] = useState(false);
+
     return (
-        <nav class="navigation fixed-top navbar-light bg-light">
-            <TopNavMenu />
-            <div class="container-fluid navbar navbar-custom">
-                <Brand />
-                <Menu />
-                <ContactCTA />
-                <HamburgerIcon />
-            </div>
-        </nav>
+        <NavigationContext.Provider value={{ navState, navDispatch }}>
+
+            <nav onMouseLeave={() => {
+                navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
+            }} className="navigation fixed-top">
+                <TopNavMenu />
+                <div className="container-fluid navbar navbar-custom navbar-light bg-light">
+                    <Brand />
+                    <Menu />
+                    <ContactCTA />
+                    <HamburgerIcon toggleMobileNavigationOpen={toggleMobileNavigationOpen} setToggleMobileNavigationOpen={setToggleMobileNavigationOpen} />
+                </div>
+                {navState.navigationMenuOpen && <NavigationMenu />}
+                {toggleMobileNavigationOpen && <MobileNavigationMenu />}
+
+            </nav>
+        </NavigationContext.Provider>
     )
 }
 
@@ -31,14 +60,17 @@ const Brand = () => {
 }
 
 const Menu = () => {
+
+    const { navState, navDispatch } = useContext(NavigationContext);
+
     return (
         <div className='nav-links'>
-            <p>About Us</p>
-            <p>Admissions</p>
-            <p>Academic</p>
-            <p>Research</p>
-            <p>Campus Life</p>
-            <p>Placement</p>
+
+            {Object.keys(navState.menu_data).map((menu_item, index) => {
+                return (<p key={index} className={navState.mainMenuSelected === menu_item ? "active" : ""} onMouseEnter={() => {
+                    navDispatch({ type: "OPEN-NAVIGATION-MENU", payload: menu_item })
+                }}>{menu_item}</p>)
+            })}
         </div>
     )
 }
@@ -57,9 +89,16 @@ const ContactCTA = () => {
     )
 }
 
-const HamburgerIcon = () => {
+const HamburgerIcon = ({ toggleMobileNavigationOpen, setToggleMobileNavigationOpen }) => {
+
+    const { navState, navDispatch } = useContext(NavigationContext);
     return (
-        <div className="hamburger-icon">
+        <div onClick={() => {
+            setToggleMobileNavigationOpen((prev) => !prev)
+            if (toggleMobileNavigationOpen) {
+                navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
+            }
+        }} className="hamburger-icon" data-bs-toggle="collapse" data-bs-target="#navbarToggleMobile" aria-controls="navbarToggleMobile" aria-expanded="false" aria-label="Toggle navigation">
             <Hamburger />
         </div>
     )

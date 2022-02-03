@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TopNavMenu() {
     return (
-        <section className="top-nav-menu-x">
+        <section className="top-nav-menu-x navbar-light bg-light">
 
             <p>My Modal</p>
             <p>Staff Portal</p>
