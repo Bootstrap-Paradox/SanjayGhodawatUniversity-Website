@@ -1,0 +1,140 @@
+.footer{
+    background-color: #343434 ;
+
+    padding-top: 55px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+
+    @mixin tablet {
+        @media (max-width: 1000px) {
+            @content;
+            
+        }
+    }
+
+    @mixin mobile{
+        @media( max-width: 530px){
+            @content;
+        }
+
+    }
+
+    @include tablet(){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, max-content);
+    }
+
+    @include mobile(){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, max-content);
+    }
+
+
+    .link-box{
+        // margin-left: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+
+        h1{
+            color: white;
+            cursor: default;
+        }
+
+        p{
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .icon-box{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+        }
+    }
+
+
+    .contact-us{
+        // margin:auto;
+
+        grid-area: 1/3/3/4;
+
+        @include tablet {
+            grid-area: 3/1/4/3;
+            justify-self: center;
+            margin-top: 4rem;
+        }
+
+        @include mobile(){
+            grid-area: 5/1/6/1;
+
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+    h1{
+        margin-bottom: 48px;
+        color: white;
+    }
+    
+    .pill{
+        color: #D3D3D3;
+        margin-bottom: 28px;
+
+        span{
+            margin-right: 1.1rem;
+            height: 27px;
+            width: 27px;
+
+            svg{
+                height: 24px;
+                width: auto;
+                fill: #D3D3D3;
+            }
+        }
+    }
+
+        .address-pill{
+            @extend .pill;
+            display: flex;
+            justify-content: start;
+
+            p:nth-child(1){
+                margin-bottom: 9px;
+                font-weight: 600;
+            }
+
+            p{
+                font-weight: 400;
+            }
+        }
+        }
+    
+        .copyright{
+            margin: 0.5rem auto;
+            color: #969696;
+            font-weight: 600;
+
+            grid-area: 3/1/4/4;
+
+            @include tablet{
+                grid-area: 4/1/5/3;
+            }
+
+            @include mobile(){
+                grid-area: 6/1/7/1;
+
+                font-size: 0.8rem;
+            }
+        }
+
+    .footer-icon{
+        cursor: pointer;
+        svg{
+            width: 34px;
+            height: auto;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Component/footer/footer';
 import NavBar from '../Component/navbar/navbar';
 import TopNavMenu from '../Component/navbar/topNavMenu';
 import LandingCarousel from '../Section/LandingCarousel/landingCarousel';
@@ -19,6 +20,7 @@ export default function Home() {
             <YoutubeVideos />
             <OurRecruiters />
             <Leadership />
+            <Footer />
         </>
     )
 }
