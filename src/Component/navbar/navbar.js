@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useState } from 'react';
+import React, { createContext, useReducer, useState, useContext } from 'react';
 import TopNavMenu from './topNavMenu';
 
 import SGULogo from '../../Static/images/SGU Logo.png';
@@ -6,7 +6,6 @@ import CallIcon from '../../Static/svg_components/callIcon'
 import menus from './menu';
 import NavigationMenu, { MobileNavigationMenu } from './navbarLogic';
 import { NavigationReducer } from './navbarReducer';
-import { useContext } from 'react/cjs/react.development';
 
 export const NavigationContext = createContext();
 
@@ -39,6 +38,7 @@ export default function NavBar() {
                     <Menu />
                     <ContactCTA />
                     <HamburgerIcon toggleMobileNavigationOpen={toggleMobileNavigationOpen} setToggleMobileNavigationOpen={setToggleMobileNavigationOpen} />
+                    <div></div>
                 </div>
                 {navState.navigationMenuOpen && <NavigationMenu />}
                 {toggleMobileNavigationOpen && <MobileNavigationMenu />}
@@ -98,7 +98,7 @@ const HamburgerIcon = ({ toggleMobileNavigationOpen, setToggleMobileNavigationOp
             if (toggleMobileNavigationOpen) {
                 navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
             }
-        }} className="hamburger-icon" data-bs-toggle="collapse" data-bs-target="#navbarToggleMobile" aria-controls="navbarToggleMobile" aria-expanded="false" aria-label="Toggle navigation">
+        }} className="hamburger-icon-x" >
             <Hamburger />
         </div>
     )

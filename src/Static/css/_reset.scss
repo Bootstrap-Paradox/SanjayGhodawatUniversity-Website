@@ -8,11 +8,23 @@ body{
 }
 
 .carousel-custom{
+    overflow: visible;
+
+
     .carousel-indicators{
         position: absolute;
         bottom: -4rem;
         margin-top: 4rem;
     }
+
+    .carousel-inner{
+        overflow: visible;
+
+        .carousel-item{
+            overflow: visible;
+        }
+    }
+
 
     .carousel-control-prev{
         .carousel-control-prev-icon{

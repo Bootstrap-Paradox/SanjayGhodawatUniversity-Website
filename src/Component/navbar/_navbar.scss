@@ -8,13 +8,12 @@
         
         display: grid;
         grid-template-columns: max-content 1fr max-content ;
+        max-width: 100vw;
         
         @media(max-width: 900px){
-            grid-template-columns: max-content 1fr;
-        }
-        
-    
+            grid-template-columns: max-content 1fr max-content;
 
+        }
 
 
 
@@ -142,7 +141,7 @@
         }
 
 
-        .hamburger-icon{
+        .hamburger-icon-x{
 
             @media(min-width: 1012px){
                 display: none;

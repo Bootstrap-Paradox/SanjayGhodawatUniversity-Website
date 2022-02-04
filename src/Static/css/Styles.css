@@ -7,10 +7,22 @@ body {
   font-family: 'Poppins';
 }
 
+.carousel-custom {
+  overflow: visible;
+}
+
 .carousel-custom .carousel-indicators {
   position: absolute;
   bottom: -4rem;
   margin-top: 4rem;
+}
+
+.carousel-custom .carousel-inner {
+  overflow: visible;
+}
+
+.carousel-custom .carousel-inner .carousel-item {
+  overflow: visible;
 }
 
 .carousel-custom .carousel-control-prev .carousel-control-prev-icon {
@@ -72,13 +84,14 @@ body {
   -ms-grid-columns: max-content 1fr max-content;
       grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
       grid-template-columns: max-content 1fr max-content;
+  max-width: 100vw;
 }
 
 @media (max-width: 900px) {
   .navigation .navbar-custom {
-    -ms-grid-columns: max-content 1fr;
-        grid-template-columns: -webkit-max-content 1fr;
-        grid-template-columns: max-content 1fr;
+    -ms-grid-columns: max-content 1fr max-content;
+        grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
+        grid-template-columns: max-content 1fr max-content;
   }
 }
 
@@ -220,7 +233,7 @@ body {
   color: #434343;
 }
 
-.navigation .navbar-custom .hamburger-icon {
+.navigation .navbar-custom .hamburger-icon-x {
   -webkit-box-shadow: 1.6px 1.7px 2.2px rgba(0, 0, 0, 0.013), 3.8px 4.2px 5.3px rgba(0, 0, 0, 0.015), 7.1px 7.9px 10px rgba(0, 0, 0, 0.016), 12.7px 14.1px 17.9px rgba(0, 0, 0, 0.019), 23.8px 26.3px 33.4px rgba(0, 0, 0, 0.028), 57px 63px 80px rgba(0, 0, 0, 0.07);
           box-shadow: 1.6px 1.7px 2.2px rgba(0, 0, 0, 0.013), 3.8px 4.2px 5.3px rgba(0, 0, 0, 0.015), 7.1px 7.9px 10px rgba(0, 0, 0, 0.016), 12.7px 14.1px 17.9px rgba(0, 0, 0, 0.019), 23.8px 26.3px 33.4px rgba(0, 0, 0, 0.028), 57px 63px 80px rgba(0, 0, 0, 0.07);
   border-radius: 0.4rem;
@@ -237,12 +250,12 @@ body {
 }
 
 @media (min-width: 1012px) {
-  .navigation .navbar-custom .hamburger-icon {
+  .navigation .navbar-custom .hamburger-icon-x {
     display: none;
   }
 }
 
-.navigation .navbar-custom .hamburger-icon svg {
+.navigation .navbar-custom .hamburger-icon-x svg {
   width: 32px;
   height: 32px;
 }
@@ -588,6 +601,7 @@ body {
 }
 
 .footer .contact-us {
+  margin-top: 2rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -776,6 +790,8 @@ body {
 .news-and-events .display-card .image img {
   width: 100%;
   border-radius: 0.5rem;
+  -webkit-box-shadow: 12px 12px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 12px 12px 80px rgba(0, 0, 0, 0.07);
 }
 
 @media (min-width: 700px) {
@@ -836,6 +852,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  overflow: visible;
 }
 
 @media (max-width: 800px) {
@@ -936,6 +953,137 @@ body {
 .news-and-events .news-pill-section .news-pill .textual p {
   font-size: clamp(0.8rem, 30vw, 0.5rem);
   color: #949494;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.highlight-section .carousel {
+  overflow: visible;
+}
+
+.highlight-section .carousel-inner {
+  overflow: visible;
+}
+
+.highlight-section .highlight-block {
+  border-radius: 1rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 430px;
+  max-width: 473px;
+  width: 80vw;
+}
+
+.highlight-section .highlight-block img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.highlight-section .highlight-block .textual {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  bottom: 0;
+  border-radius: 0.8rem;
+  padding: auto 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: #f9fdff;
+}
+
+.highlight-section .highlight-block .textual .title {
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #434343;
+}
+
+.highlight-section .highlight-block .textual .description {
+  font-size: 0.8rem;
+  margin: auto 1.6rem;
+  margin-bottom: 0.8rem;
+  text-align: justify;
+  color: #949494;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.highlight-section .highlight-block-large {
+  border-radius: 1rem;
+  margin: auto;
+  position: relative;
+  height: 430px;
+  width: 80vw;
+}
+
+.highlight-section .highlight-block-large img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.highlight-section .highlight-block-large .textual {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(15, 15, 15, 0.9)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(15, 15, 15, 0.9) 80%);
+  color: white;
+  bottom: 0;
+  border-radius: 1rem;
+  padding: auto 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr (max-content)[2];
+      grid-template-rows: 1fr repeat(2, -webkit-max-content);
+      grid-template-rows: 1fr repeat(2, max-content);
+  height: 80%;
+}
+
+.highlight-section .highlight-block-large .textual .title {
+  width: 60vw;
+  margin: auto;
+  margin-left: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: 2/1/3/1;
+}
+
+.highlight-section .highlight-block-large .textual .description {
+  font-size: 0.8rem;
+  margin: auto;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: 3/1/4/1;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
