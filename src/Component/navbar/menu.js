@@ -120,4 +120,16 @@ const menus = {
     }
 }
 
+const topNavMenus = {
+    "My Modal": "",
+    "Staff Portal": "",
+    "Student Login": "",
+    "Careers": "",
+    "Alumni": "",
+    "Contact Us": "",
+    "Media": "",
+    "Photo Gallery": "",
+}
+
 export default menus;
+export { topNavMenus }

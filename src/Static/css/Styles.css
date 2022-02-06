@@ -583,6 +583,7 @@ body {
 .footer .link-box h1 {
   color: white;
   cursor: default;
+  margin-bottom: 1.3rem;
 }
 
 .footer .link-box p {
@@ -1385,6 +1386,14 @@ body {
 @media (max-width: 700px) {
   .carousel-landing .carousel-inner .carousel-item img {
     height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .carousel-landing .carousel-inner .carousel-item img {
+    height: 60vh;
     -o-object-fit: cover;
        object-fit: cover;
   }

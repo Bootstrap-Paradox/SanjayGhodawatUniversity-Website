@@ -1,5 +1,7 @@
 import React from 'react';
+import useWindowDimensions from '../../Logic/useWindowDimensions';
 import CallIcon from '../../Static/svg_components/callIcon';
+import { topNavMenus } from '../navbar/menu';
 
 
 const footerMenus = {
@@ -47,6 +49,9 @@ export default function Footer() {
 
 
 const LinkBox = ({ title, footerLinks }) => {
+
+    const { height, width } = useWindowDimensions();
+
     return (
         <div className="link-box">
             <h1>{title}</h1>
@@ -55,6 +60,13 @@ const LinkBox = ({ title, footerLinks }) => {
                     <p key={index} onClick={() => {
                         window.location.href = footerLink
                     }} >{footerMenu}</p>
+                )
+            })}
+            {title === "Quick Links" && width <= 900 && Object.entries(topNavMenus).map(([topMenu, topMenuLink], index) => {
+                return (
+                    <p key={`${1000 + index}`} onClick={() => {
+                        window.location.href = topMenuLink
+                    }} >{topMenu}</p>
                 )
             })}
         </div>
