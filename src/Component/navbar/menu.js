@@ -34,6 +34,10 @@ const menus = {
             url: "",
             nested_links: {}
         },
+        "Accreditation and Ranking": {
+            url: "",
+            nested_links: {}
+        },
         "Awards and Achievements": {
             url: "",
             nested_links: {}
@@ -44,6 +48,33 @@ const menus = {
         }
     },
     "Admissions": {
+        "Overview": {
+            url: "",
+            nested_links: {}
+        },
+        "Why SGU?": {
+            url: "",
+            nested_links: {}
+        },
+        "Eligibility": {
+            url: "",
+            nested_links: {}
+        },
+        "Application Procedure": {
+            url: "",
+            nested_links: {}
+        },
+        "Fee Structure": {
+            url: "",
+            nested_links: {}
+        },
+        "Scholarship": {
+            url: "",
+            nested_links: {}
+        },
+
+    },
+    "Academic": {
         "Schools & Departments": {
             url: "",
             nested_links:
@@ -56,65 +87,102 @@ const menus = {
                 "School of Architecture": ""
             },
             image: team2,
-        }, "Why SGU?": {
-            url: "",
-            nested_links: {}
-        }, "Eligibility": {
-            url: "",
-            nested_links: {}
-        }, "Application Procedure": {
-            url: "",
-            nested_links: {}
-        }, "Fee Structure": {
-            url: "",
-            nested_links: {}
-        }, "Scholarship": {
-            url: "",
-            nested_links: {}
         },
-
-    },
-    "Academic": {
-        "About SGU": {
+        "Academic Calender": {
             url: "https://www.harvard.edu/",
             nested_links:
-            {
-                "SGU": "https://youtube.com"
-            }
+                {}
             ,
             image: team1,
         },
+        "Academic Brochure": {
+            url: "",
+            nested_links: {}
+        },
+        "Foreign University Collaboration": {
+            url: "",
+            nested_links: {}
+        },
+        "University Library": {
+            url: "",
+            nested_links: {}
+        },
+        "Grievance Redressal Mechanism": {
+            url: "",
+            nested_links: {}
+        },
     },
     "Research": {
-        "About SGU": {
-            url: "https://www.harvard.edu/",
-            nested_links:
-            {
-                "SGU": "https://youtube.com"
-            }
-            ,
+        "PH.D Program": {
+            url: "",
+            nested_links: {
+                "Ph.D Scholar": ""
+            },
+            image: team1,
+        },
+        "IPR Cell": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Research & Publications": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Center of Excellence": {
+            url: "",
+            nested_links: {},
             image: team1,
         },
     },
     "Campus Life": {
-        "About SGU": {
-            url: "https://www.harvard.edu/",
-            nested_links:
-            {
-                "SGU": "https://youtube.com"
-            }
-            ,
+        "Gallary": {
+            url: "",
+            nested_links: {},
             image: team1,
         },
+        "Clubs and Associations": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Sports": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Campus Life": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Community Services": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+
     },
     "Placement": {
-        "About SGU": {
-            url: "https://www.harvard.edu/",
-            nested_links:
-            {
-                "SGU": "https://youtube.com"
-            }
-            ,
+        "Overview": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Placement Details & Statistics": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Contact Us": {
+            url: "",
+            nested_links: {},
+            image: team1,
+        },
+        "Photo Gallary": {
+            url: "",
+            nested_links: {},
             image: team1,
         },
     }

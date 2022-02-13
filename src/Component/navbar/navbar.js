@@ -1,6 +1,8 @@
 import React, { createContext, useReducer, useState, useContext } from 'react';
 import TopNavMenu from './topNavMenu';
 
+
+
 import SGULogo from '../../Static/images/SGU Logo.png';
 import CallIcon from '../../Static/svg_components/callIcon'
 import menus from './menu';
@@ -51,7 +53,9 @@ export default function NavBar() {
 const Brand = () => {
 
     return (
-        <div className="navbar-brand brand">
+        <div onClick={() => {
+
+        }} className="navbar-brand brand">
             <img className='img-fluid' src={SGULogo} />
             <h3>Sanjay<br></br>Ghodawat<br></br>University</h3>
 
