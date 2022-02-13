@@ -18,7 +18,9 @@ export default function YoutubeVideos() {
 }
 
 const YoutubeVideosCarousel = () => {
+
     return (
+
         <div id="carouselYoutubeVideosIndicators" className="carousel carousel-custom carousel-dark slide youtube-video-carousel" data-bs-ride="carousel">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselYoutubeVideosIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -29,11 +31,11 @@ const YoutubeVideosCarousel = () => {
                 <div className="carousel-item active">
                     <YoutubeVideoComponent />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item ">
                     <YoutubeVideoComponent />
 
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item ">
                     <YoutubeVideoComponent />
 
                 </div>
