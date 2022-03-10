@@ -11,6 +11,8 @@ export default function NavigationMenu() {
     const nestedLinks = Object.entries(navState.menu_data[navState.mainMenuSelected][navState.subMenuSelected].nested_links)
 
 
+    const dataImage = navState.menu_data[navState.mainMenuSelected][navState.subMenuSelected].image
+
     return (
         <div className="navigation-menu navbar-light bg-light" >
             <section className="sub-menu">
@@ -42,7 +44,7 @@ export default function NavigationMenu() {
 
             </section>
             <section className="image">
-                <img src={image1} />
+                <img src={dataImage || image1} />
             </section>
         </div>
     )

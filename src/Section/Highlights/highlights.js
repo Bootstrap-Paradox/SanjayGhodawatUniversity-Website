@@ -1,6 +1,8 @@
 import React from 'react';
 
 import image1 from '../../Static/images/1.jpg';
+import highlightData from './highlightData';
+
 
 export default function Highlights() {
     return (
@@ -14,26 +16,30 @@ export default function Highlights() {
     )
 }
 
+
 const HighlightCarousel = () => {
+
+    const highlightDataFor2 = highlightData;
+
     return (
         <div id="carouselHighlightIndicators" className="carousel carousel-custom carousel-dark slide" data-bs-ride="carousel">
             <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                {highlightData.map((data, index) => {
+                    return (
+                        <button key={index} type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide-to={`${index}`} className={`${index === 0 ? "active" : ""}`} aria-current={`${index === 0 ? "true" : ""}`} aria-label={`Slide ${index + 1}`}></button>
+
+                    )
+                })}
+
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <HighlightBlock />
-                </div>
-                <div className="carousel-item">
-                    <HighlightBlock />
-
-                </div>
-                <div className="carousel-item">
-                    <HighlightBlock />
-
-                </div>
+                {highlightData.map((data, index) => {
+                    return (
+                        <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} >
+                            <HighlightBlock title={data.title} url={data.url} image={data.image} />
+                        </div>
+                    )
+                })}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,14 +65,15 @@ const HighlightBlockLarge = ({ title = "Bollywood Megastar Sara Ali Khan Visit",
     )
 }
 
-const HighlightBlock = ({ title = "Bollywood Megastar Sara Ali Khan Visit", description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus dignissimos adipisci, delectus quis quibusdam, numquam porro error corrupti esse sunt ullam maiores ea alias! Mollitia aspernatur quasi provident praesentium, non hic!" }) => {
+const HighlightBlock = ({ title = "Bollywood Megastar Sara Ali Khan Visit", url = "", image = { image1 }, description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus dignissimos adipisci, delectus quis quibusdam, numquam porro error corrupti esse sunt ullam maiores ea alias! Mollitia aspernatur quasi provident praesentium, non hic!" }) => {
 
     return (
-        <div className="highlight-block">
-            <img src={image1} alt="Image of Sgu Campus" />
+        <div onClick={() => {
+            window.location.href = url
+        }} className="highlight-block">
+            <img src={image} alt="Image of Sgu Campus" />
             <div className='textual'>
                 <h3 className='title'>{title}</h3>
-                <p className='description'>{description}</p>
             </div>
         </div>
     )

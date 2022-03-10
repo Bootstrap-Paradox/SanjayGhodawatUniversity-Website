@@ -29,14 +29,14 @@ const YoutubeVideosCarousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <YoutubeVideoComponent />
+                    <YoutubeVideoComponent source='https://www.youtube.com/embed/z2yvgecWcPs' />
                 </div>
                 <div className="carousel-item ">
-                    <YoutubeVideoComponent />
+                    <YoutubeVideoComponent source="https://www.youtube.com/embed/IxofAlA4lm0" />
 
                 </div>
                 <div className="carousel-item ">
-                    <YoutubeVideoComponent />
+                    <YoutubeVideoComponent source="https://www.youtube.com/embed/37PX8zQN7go" />
 
                 </div>
             </div>
@@ -52,12 +52,11 @@ const YoutubeVideosCarousel = () => {
     )
 }
 
-const YoutubeVideoComponent = ({ source = "https://youtube.com/embed/5vJr5ZjWfjQ" }) => {
+const YoutubeVideoComponent = ({ source = "https://www.youtube.com/embed/z2yvgecWcPs" }) => {
     return (
         <div className='video-component'>
 
-            <iframe className="" src={source}>
-            </iframe>
+            <iframe src={source} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
         </div>
 
 

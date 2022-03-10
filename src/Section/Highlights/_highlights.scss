@@ -1,13 +1,5 @@
 .highlight-section{
 
-    // overflow: hidden;
-
-    // .carousel{
-    //     overflow: visible;
-    // }
-    // .carousel-inner{
-    //     overflow: visible;
-    // }
 
     .highlight-block{
         $border-radius: 1rem;
@@ -34,12 +26,14 @@
         .textual{
             position: absolute;
 
-            width: fit-content;
+            // width: fit-content;
 
             color: black;
             bottom: 0;
+            right: 0;
+            left: 0;
 
-            border-radius: $border-radius - 0.2rem;
+            border-radius: $border-radius - 0.4rem;
 
             padding: auto 1rem;
 
@@ -55,12 +49,14 @@
 
             .title{
                 // text-align: justify;
-                width: 60%;
+                width: 90%;
                 margin:auto;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
 
-                @include paragraph-overflow($clamp: 2);
+                font-size: 1rem;
+
+                @include paragraph-overflow($clamp: 1);
 
                 color: getColor(Text);
             }

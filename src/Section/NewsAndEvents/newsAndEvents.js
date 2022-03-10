@@ -4,6 +4,7 @@ import testImage from '../../Static/images/1.jpg';
 import NewsAndEventsReducer from './NewsAndEventsReducer';
 import image1 from '../../Static/images/1.jpg';
 import team from '../../Static/images/team1.jpg';
+import newsData from './newsData';
 
 
 const NewsAndEventsContext = createContext();
@@ -62,22 +63,21 @@ const NewsCarousel = () => {
     return (
         <div id="carouselNewsIndicators" className="carousel carousel-custom carousel-dark slide" data-bs-ride="carousel">
             <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselNewsIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselNewsIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselNewsIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                {newsData.map((data, index) => {
+                    return (
+                        <button key={index} type="button" data-bs-target="#carouselNewsIndicators" data-bs-slide-to={`${index}`} className={`${index === 0 ? "active" : ""}`} aria-current={`${index === 0 ? "true" : ""}`} aria-label={`Slide ${index + 1}`}></button>
+
+                    )
+                })}
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <DisplayCard />
-                </div>
-                <div className="carousel-item">
-                    <DisplayCard />
-
-                </div>
-                <div className="carousel-item">
-                    <DisplayCard />
-
-                </div>
+                {newsData.map((data, index) => {
+                    return (
+                        <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} >
+                            <DisplayCard title={data.title} description={data.description} image={data.image} url={data.url} />
+                        </div>
+                    )
+                })}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselNewsIndicators" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,20 +91,22 @@ const NewsCarousel = () => {
     )
 }
 
-const DisplayCard = ({ title = "Celebrating Teachers Day", description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur in obcaecati veniam aspernatur. Sed, sequi voluptas recusandae maxime modi itaque ipsum sint mollitia ex suscipit praesentium eius necessitatibus optio. Voluptatibus, aliquid." }) => {
+const DisplayCard = ({ title = "Celebrating Teachers Day", description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur in obcaecati veniam aspernatur. Sed, sequi voluptas recusandae maxime modi itaque ipsum sint mollitia ex suscipit praesentium eius necessitatibus optio. Voluptatibus, aliquid.", image = "", url = "" }) => {
 
     // const { newsState, newsDispatch } = useContext(NewsAndEventsContext);
     return (
         <>
             <div className='display-card'>
                 <section className="image">
-                    <img src={testImage} alt="Some Image" />
+                    <img src={image} alt="Some Image" />
                 </section>
 
                 <section className="textual">
                     <h1>{title}</h1>
                     <p>{description}</p>
-                    <button className='btn'>Know More</button>
+                    <button onClick={() => {
+                        window.location.href = url
+                    }} className='btn'>Know More</button>
 
                 </section>
             </div>
