@@ -1,5 +1,10 @@
 .highlight-section{
+    height: auto;
 
+
+    .swiper-slide{
+        height: 600px;
+    }
 
     .highlight-block{
         $border-radius: 1rem;

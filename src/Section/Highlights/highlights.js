@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import image1 from '../../Static/images/1.jpg';
 import highlightData from './highlightData';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import "./styles.css";
+
+// import required modules
+import { Pagination, Navigation, Autoplay } from "swiper";
+
 
 export default function Highlights() {
     return (
-        <section className="section highlight-section">
-            <section className="title">
+        <section className='section highlight-section'>
+            <section className='title'>
                 <h1>SGU Highlights</h1>
             </section>
+            <section>
 
-            <HighlightCarousel />
+                <HighlightCarousel />
+            </section>
         </section>
     )
 }
@@ -21,36 +35,84 @@ const HighlightCarousel = () => {
 
     const highlightDataFor2 = highlightData;
 
+    useEffect(() => {
+        document.documentElement.style.setProperty("--swiper-theme-color", "#000")
+    }, [])
+
     return (
-        <div id="carouselHighlightIndicators" className="carousel carousel-custom carousel-dark slide" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-                {highlightData.map((data, index) => {
-                    return (
-                        <button key={index} type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide-to={`${index}`} className={`${index === 0 ? "active" : ""}`} aria-current={`${index === 0 ? "true" : ""}`} aria-label={`Slide ${index + 1}`}></button>
-
-                    )
-                })}
-
-            </div>
-            <div className="carousel-inner">
-                {highlightData.map((data, index) => {
-                    return (
-                        <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} >
-                            <HighlightBlock title={data.title} url={data.url} image={data.image} />
-                        </div>
-                    )
-                })}
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
+        <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            breakpoints={{
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1700: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+                // 1024: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 50,
+                // },
+            }}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            loop={true}
+            pagination={{
+                clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            className="super-slider"
+        >
+            {highlightData.map((data, index) => {
+                return (
+                    <SwiperSlide
+                        className='x-slide'
+                    ><HighlightBlock title={data.title} url={data.url} image={data.image} /></SwiperSlide>
+                )
+            })}
+        </Swiper>
     )
+
+    // return (
+    //     <div id="carouselHighlightIndicators" className="carousel carousel-custom carousel-dark slide" data-bs-ride="carousel">
+    //         <div className="carousel-indicators">
+    //             {highlightData.map((data, index) => {
+    //                 return (
+    //                     <button key={index} type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide-to={`${index}`} className={`${index === 0 ? "active" : ""}`} aria-current={`${index === 0 ? "true" : ""}`} aria-label={`Slide ${index + 1}`}></button>
+
+    //                 )
+    //             })}
+
+    //         </div>
+    //         <div className="carousel-inner">
+    //             {highlightData.map((data, index) => {
+    //                 return (
+    //                     <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} >
+    //                         <HighlightBlock title={data.title} url={data.url} image={data.image} />
+    //                     </div>
+    //                 )
+    //             })}
+    //         </div>
+    //         <button className="carousel-control-prev" type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide="prev">
+    //             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    //             <span className="visually-hidden">Previous</span>
+    //         </button>
+    //         <button className="carousel-control-next" type="button" data-bs-target="#carouselHighlightIndicators" data-bs-slide="next">
+    //             <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    //             <span className="visually-hidden">Next</span>
+    //         </button>
+    //     </div>
+    // )
 }
 
 const HighlightBlockLarge = ({ title = "Bollywood Megastar Sara Ali Khan Visit", description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus dignissimos adipisci, delectus quis quibusdam, numquam porro error corrupti esse sunt ullam maiores ea alias! Mollitia aspernatur quasi provident praesentium, non hic!" }) => {

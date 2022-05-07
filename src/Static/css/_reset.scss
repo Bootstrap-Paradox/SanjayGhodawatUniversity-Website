@@ -7,6 +7,15 @@ body{
     font-family: 'Poppins';
 }
 
+.super-slider{
+    position: relative;
+
+    .swiper-button-next{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 .carousel-custom{
     overflow: visible;
 
