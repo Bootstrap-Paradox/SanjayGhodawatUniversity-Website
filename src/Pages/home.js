@@ -43,7 +43,6 @@ export default function Home() {
                 <OurRecruiters />
                 <Leadership />
             </section>
-            <Footer />
         </>
     )
 }
