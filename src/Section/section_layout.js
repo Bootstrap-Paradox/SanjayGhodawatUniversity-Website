@@ -1,6 +1,10 @@
 import React from 'react';
 
 import background from '../Static/images/1.jpg';
+import { Search } from '../Static/svg_components/Icons';
+
+import managementpep from '../Static/images/management.jpg';
+import pepschat from '../Static/images/people_chatting.jpg';
 
 function PageDisplaySection({ title = "", subTitle = "" }) {
     return (
@@ -18,7 +22,7 @@ function SubPageSection(props) {
     return (
         <>
             <PageDisplaySection title={props.title} subTitle={props.subTitle} />
-            <section className="page-layout-template container">
+            <section className="page-layout-template">
                 <section className="layout-menu">
                     <div className="layout-menu-block">
                         <div className="layout-menu-block-title">
@@ -36,11 +40,73 @@ function SubPageSection(props) {
                     </div>
                 </section>
 
-                <section className="content">
+                <section className="layout-content">
                     {props.children}
                 </section>
             </section>
         </>
+    )
+}
+
+export function PromotionalActionCenter(props) {
+    return (
+        <>
+            <div className="custom-action-center">
+                <div className='action'>
+                    {props.children}
+                </div>
+            </div>
+        </>
+    )
+}
+
+
+export function PromotionalPageLayout(props) {
+    return (
+        <>
+            <section className='promotional-section'>
+
+                {props.actionCenter}
+
+
+                <section className="promotional-layout">
+
+                    <section className='promotional-block'>
+                        {props.hidePromotions ||
+                            <div className='promotional-block-box'>
+                                <img src={pepschat} />
+                                <span>Promotion</span>
+                            </div>
+                        }
+                    </section>
+
+
+                    <section className='promotional-content'>
+                        {props.children}
+                    </section>
+
+                    <section className='promotional-block'>
+                        {props.hidePromotions ||
+
+                            <div className='promotional-block-box'>
+                                <span>Promotion</span>
+                            </div>
+                        }
+
+                    </section>
+
+
+                </section>
+            </section>
+        </>
+    )
+}
+
+export function CustomGridLayout(props) {
+    return (
+        <section className="custom-grid-layout">
+            {props.children}
+        </section>
     )
 }
 

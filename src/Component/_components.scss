@@ -1,0 +1,379 @@
+.info-block {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr;
+
+    border-radius: 8px;
+    box-shadow: $smooth-shadow-hover;
+
+    min-height: 500px;
+
+    &-image {
+
+        margin: 1rem;
+
+        img {
+            border-radius: 0.8rem;
+            width: 100%;
+
+            object-fit: cover;
+            height: 100%;
+        }
+
+    }
+
+    &-textual {
+
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+
+        &-title {
+            padding-left: 1rem;
+            padding-top: 1rem;
+        }
+
+        &-description {
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+
+.image-display-block {
+    .image-disply {}
+}
+
+
+.promotional-section {
+
+    .promotional-layout {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        grid-template-areas: ". content .";
+
+        .promotional-block {
+            min-width: 300px;
+
+            &-box {
+                box-shadow: $shadow;
+                // max-width: 354px;
+                // min-height: 573px;
+                border-radius: 0.6rem;
+                margin: 1.1rem;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 12px 6px 12px;
+
+                img {
+                    max-width: 330px;
+                    border-radius: 7px;
+                    margin-bottom: 12px;
+                }
+
+                span {
+                    color: #C6C6C6;
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        .promotional-content {
+            grid-area: content;
+        }
+    }
+
+    .custom-action-center {
+        min-height: 120px;
+        width: 100%;
+        display: flex;
+
+        .action {
+
+            $main-color: #343434;
+            display: flex;
+            width: 100%;
+
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: row;
+            gap: 2rem;
+
+            .action-btn {
+                color: white;
+                background-color: $main-color;
+
+                padding: 14px 68px;
+                border-radius: 30px;
+            }
+
+            .action-search-field {
+                border: 1px solid $main-color;
+                height: 52px;
+                width: 300px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                padding-left: 26px;
+                padding-right: 26px;
+
+
+
+                input {
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.faculty-info-block {
+    box-shadow: $shadow;
+    border-radius: 23px;
+
+    max-width: 1099px;
+
+    margin-bottom: 2rem;
+
+
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    .faculty-info {
+        margin: 3rem 1.8rem 1.8rem 0;
+
+        .school-block {
+            margin-top: 1.5rem;
+            background-color: #F5F5F5;
+            border-radius: 1.05rem;
+            padding: 1.1rem 1.4rem;
+
+            &>h5 {
+                color: #747474;
+
+                &::selection {
+                    background-color: getColor(darkBlock);
+                }
+            }
+
+            .courses-section {
+
+                @include disable-select;
+
+                margin-top: 1.9rem;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 1.05rem;
+                row-gap: 0.8rem;
+
+                .course-btn {
+                    color: white;
+                    background-color: getColor(darkBlock);
+                    border: none;
+                    padding: 4px 1.05rem;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+
+    img {
+        width: 277px;
+        height: 318px;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin: 0.8rem;
+    }
+
+
+}
+
+.dean-desk-block {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    box-shadow: $shadow;
+
+    border-radius: 20px;
+    padding: 2rem;
+
+    max-width: 1220px;
+
+    &-image {
+        img {
+            max-width: 386px;
+            object-fit: cover;
+
+            height: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    &-content {
+        margin-left: 2rem;
+
+        h2 {
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            margin-top: 1.8rem;
+            font-weight: 600;
+        }
+
+        div {
+            margin-top: 5rem;
+            text-align: end;
+
+            h4 {
+                color: #c1c1c1;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+}
+
+.faculty-profile {
+    box-shadow: $shadow;
+    max-width: 415px;
+    text-align: center;
+
+    position: relative;
+
+    padding-top: 4rem;
+
+    border-radius: 50px;
+
+    &-sgu-logo {
+        position: absolute;
+        top: 35px;
+        left: 29px;
+
+        img {
+
+            width: 46px;
+            height: auto;
+        }
+    }
+
+    &-image {
+        width: max-content;
+        height: max-content;
+        margin: auto;
+        margin-bottom: 1.5rem;
+
+        padding: 0.2rem;
+        background-image: linear-gradient(90deg, #D87474, #571313);
+        border-radius: 50%;
+
+
+        img {
+            width: 167px;
+            height: 167px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &-content {
+
+        &>div {
+            margin: auto 2rem;
+            margin-top: 3rem;
+            border-top: solid 1px #ccc;
+            padding-top: 2rem;
+
+            p {
+                margin-top: 1.8rem;
+            }
+
+        }
+
+        p {
+            color: #b2b2b2;
+        }
+    }
+
+    &-email {
+
+        background-color: getColor(secondary_red);
+        width: max-content;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border-radius: 6px 6px 0 0;
+
+        padding: 6px;
+
+        p {
+            font-size: 12px;
+            color: white;
+            margin: auto;
+            font-weight: bold;
+        }
+    }
+}
+
+.department-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin: 3rem 1rem;
+
+    width: 100%;
+
+    &-name {
+        padding: 0.2rem 4rem;
+        text-align: center;
+    }
+
+    &-menu {
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #ccc;
+        gap: 1.5rem;
+
+        &-btn {
+            color: #343434;
+            background-color: #F5F5F5;
+            padding: 8px 1rem;
+            border: none;
+            border-radius: 6px;
+
+            &:hover {
+                background-color: #f0f0f0;
+
+            }
+
+        }
+
+        &-btn-active {
+            @extend .department-info-menu-btn;
+            background-color: #343434;
+            color: white;
+
+            &:hover {
+                background-color: #343434;
+            }
+        }
+    }
+
+}

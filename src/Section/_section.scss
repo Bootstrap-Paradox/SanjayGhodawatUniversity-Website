@@ -79,7 +79,9 @@
     grid-template-columns: 30% 1fr;
 
     .layout-menu {
+
         &-block {
+            margin: auto;
             box-shadow: $shadow;
             min-height: 600px;
             max-width: 351px;
@@ -135,5 +137,18 @@
         }
     }
 
-    .layout-content {}
+    .layout-content {
+        padding-right: 3rem;
+    }
+}
+
+
+.custom-grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &>div {
+        background-color: red;
+    }
 }

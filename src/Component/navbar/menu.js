@@ -13,7 +13,7 @@ const menus = {
             url: "",
             nested_links:
             {
-                "SGU": "http://www.sanjayghodawatuniversity.ac.in/about-sgu",
+                "SGU": "/about",
                 "SGU Logo": "http://www.sanjayghodawatuniversity.ac.in/about-logo",
                 "Sanjay Ghodawat Group": "http://www.sanjayghodawatuniversity.ac.in/about-sggroup"
             }
@@ -103,15 +103,9 @@ const menus = {
     },
     "Academic": {
         "Schools & Departments": {
-            url: "",
+            url: "/faculty",
             nested_links:
             {
-                "School of Technology": "",
-                "School of Commerce & Management": "",
-                "School of Liberal Arts": "",
-                "School of Computer": "",
-                "School of Computer Science and Applications": "",
-                "School of Architecture": ""
             },
             image: team2,
         },
