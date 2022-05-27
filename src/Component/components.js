@@ -61,26 +61,26 @@ export function DeanDesk() {
 
 export function ProfileCard() {
     return (
-        <div className='faculty-profile'>
-            <div className='faculty-profile-sgu-logo'>
+        <div className='faculty-profile' data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left" >
+            {/* <div className='faculty-profile-sgu-logo'>
                 <img src={sgulogo} />
-            </div>
+            </div> */}
             <div className='faculty-profile-image'>
                 <img src={khandal} />
             </div>
             <div className='faculty-profile-content'>
                 <h3>Dr. V. S Khandal</h3>
                 <p>Associate Professor</p>
-                <p>M.Tech.(TPE), Ph.D.(Mechanical Engineering)</p>
+                {/* <p>M.Tech.(TPE), Ph.D.(Mechanical Engineering)</p> */}
 
-                <div>
+                {/* <div>
                     <h3>Area of Specialization</h3>
                     <p>Thermal Power Engineering, Alternate fuels, Sustainable Energy</p>
                 </div>
                 <div>
                     <h3>Experience</h3>
                     <p>12 Years</p>
-                </div>
+                </div> */}
             </div>
 
             <div className='faculty-profile-email'>
