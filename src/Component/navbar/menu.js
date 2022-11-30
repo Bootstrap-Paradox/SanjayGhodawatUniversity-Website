@@ -13,9 +13,9 @@ const menus = {
             url: "",
             nested_links:
             {
-                "SGU": "/about",
-                "SGU Logo": "http://www.sanjayghodawatuniversity.ac.in/about-logo",
-                "Sanjay Ghodawat Group": "http://www.sanjayghodawatuniversity.ac.in/about-sggroup"
+                "SGU": "/about/sgu",
+                "SGU Logo": "/about/logo",
+                "Sanjay Ghodawat Group": "/about/sgg"
             }
             ,
             image: uni_top_view,

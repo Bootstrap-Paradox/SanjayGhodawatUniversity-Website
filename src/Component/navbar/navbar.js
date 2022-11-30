@@ -8,6 +8,7 @@ import CallIcon from '../../Static/svg_components/callIcon'
 import menus from './menu';
 import NavigationMenu, { MobileNavigationMenu } from './navbarLogic';
 import { NavigationReducer } from './navbarReducer';
+import { useNavigate } from 'react-router-dom';
 
 export const NavigationContext = createContext();
 
@@ -52,9 +53,11 @@ export default function NavBar() {
 
 const Brand = () => {
 
+    const navigate = useNavigate();
+
     return (
         <div onClick={() => {
-
+            navigate("/");
         }} className="navbar-brand brand">
             <img className='img-fluid' src={SGULogo} />
             <h3>Sanjay<br></br>Ghodawat<br></br>University</h3>

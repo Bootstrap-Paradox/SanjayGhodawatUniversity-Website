@@ -13,7 +13,6 @@ import Faculty from './Pages/faculty';
 import { AeronauticalInfo } from './Pages/Aeronautical_Info';
 import { Profile } from './Pages/profile';
 import { AeronauticalInfo1 } from './Pages/Aeronautical_Info_1';
-import { About1 } from './Pages/about1';
 
 function App() {
   return (
@@ -22,8 +21,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/about-1" element={<About1 />} />
+          <Route path="/about/*" element={<About />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/aeronautical-info" element={<AeronauticalInfo />} />
           <Route path="/aeronautical-profile" element={<Profile />} />

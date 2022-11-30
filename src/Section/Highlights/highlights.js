@@ -76,6 +76,7 @@ const HighlightCarousel = () => {
             {highlightData.map((data, index) => {
                 return (
                     <SwiperSlide
+                        key={index}
                         className='x-slide'
                     ><HighlightBlock title={data.title} url={data.url} image={data.image} /></SwiperSlide>
                 )

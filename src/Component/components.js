@@ -6,17 +6,17 @@ import team1 from '../Static/images/team1.jpg';
 import khandal from '../Static/images/KS.jpg';
 import sgulogo from '../Static/images/SGU Logo.png';
 
-export function InfoBlock({ title = "", description = [] }) {
+export function InfoBlock({ title = "", description = [], image = sgulogo }) {
     return (
         <div className="info-block">
             <div className="info-block-image">
                 <img style={{
-                    objectFit: "contain",
-                }} src={sgulogo} />
+                    objectFit: "cover",
+                }} src={image} />
             </div>
             <div className="info-block-textual">
                 <h1 className="info-block-textual-title">{title}</h1>
-                {description.map((text, index) => <h4 key={index} className="info-block-textual-description">{text}</h4>)}
+                {description.map((text, index) => <h4 key={index} className="info-block-textual-description" dangerouslySetInnerHTML={{ __html: text }}></h4>)}
             </div>
 
         </div>
