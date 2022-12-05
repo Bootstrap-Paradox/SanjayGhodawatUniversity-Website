@@ -21,7 +21,7 @@ const menus = {
             image: uni_top_view,
         },
         "Vision Mission": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/vision",
+            url: "/about/vision",
             nested_links: {},
             image: ""
         },
@@ -53,17 +53,17 @@ const menus = {
             image: ""
         },
         "Accreditation and Ranking": {
-            url: "", // not found
+            url: "/about/accreditation",
             nested_links: {},
             image: ""
         },
         "Awards and Achievements": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/awards.php",
+            url: "/about/awards",
             nested_links: {},
             image: ""
         },
         "Organisational Structure": {
-            url: "", // not found
+            url: "/about/structure",
             nested_links: {},
             image: ""
         }

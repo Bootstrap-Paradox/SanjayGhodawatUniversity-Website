@@ -29,6 +29,10 @@ export default function About() {
         "About SGU": menus['About Us']["About SGU"]['nested_links']['SGU'],
         "About Logo": menus['About Us']['About SGU']['nested_links']['SGU Logo'],
         "Sanjay Ghodawat Universtiy": menus['About Us']['About SGU']['nested_links']['Sanjay Ghodawat Group'],
+        "Vision Mission": menus['About Us']['Vision Mission']['url'],
+        "Accreditation & Ranking": menus['About Us']['Accreditation and Ranking']['url'],
+        "Awards": menus['About Us']['Awards and Achievements']['url'],
+        "Organisational Structure": menus['About Us']['Organisational Structure']['url'],
     }
 
     return (
@@ -46,6 +50,31 @@ export default function About() {
             <Route path="/sgg" element={
                 <SubPageLayout title="SGG" navigationInformation={subMenuData}>
                     <InfoBlock title="About SGG" description={aboutSGG} image={sggroupImage} />
+                </SubPageLayout>
+            } />
+            <Route path="/vision" element={
+                <SubPageLayout title="Vision" navigationInformation={subMenuData} >
+                    <h2>Work in Progress</h2>
+                </SubPageLayout>
+            } />
+            <Route path="/accreditation" element={
+                <SubPageLayout title="Accreditation" navigationInformation={subMenuData} >
+                    <h2>Content Under Progress!!</h2>
+                </SubPageLayout>
+            } />
+            <Route path="/awards" element={
+                <SubPageLayout title="Awards" navigationInformation={subMenuData} >
+                    <h2>Content Under Progress!!</h2>
+                </SubPageLayout>
+            } />
+            <Route path="/Structure" element={
+                <SubPageLayout title="Structure" navigationInformation={subMenuData} >
+                    <h2>Content Under Progress!!</h2>
+                </SubPageLayout>
+            } />
+            <Route path="/*" element={
+                <SubPageLayout title="" navigationInformation={subMenuData} >
+                    <h2>Page Under Construction!!</h2>
                 </SubPageLayout>
             } />
         </Routes>

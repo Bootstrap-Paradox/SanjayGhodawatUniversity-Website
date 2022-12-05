@@ -2,11 +2,13 @@ import React, { useState, useContext } from 'react';
 import { NavigationContext } from './navbar';
 
 import image1 from '../../Static/images/1.jpg';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavigationMenu() {
 
     const { navState, navDispatch } = useContext(NavigationContext);
 
+    const navigate = useNavigate()
     // Nested Links
     const nestedLinks = Object.entries(navState.menu_data[navState.mainMenuSelected][navState.subMenuSelected].nested_links)
 
@@ -32,7 +34,8 @@ export default function NavigationMenu() {
                     <div className="nested-menu-list">
                         {nestedLinks.map(([nestedMenu, nestedLink], index) => {
                             return (<p onClick={() => {
-                                window.location.href = nestedLink
+                                navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
+                                navigate(nestedLink)
                             }} key={index}>{nestedMenu}</p>)
                         })}
                     </div>
@@ -120,6 +123,8 @@ const SubMenuPill = ({ subMenu = "", subMenuMetaData = {} }) => {
 
     const isLink = navState.menu_data[navState.mainMenuSelected][navState.subMenuSelected].url != ""
 
+    const navigate = useNavigate();
+
     return (
         <div className={`sub-menu-pill ${navState.subMenuSelected === subMenu ? "active" : ""}`}
             onMouseEnter={() => {
@@ -128,7 +133,9 @@ const SubMenuPill = ({ subMenu = "", subMenuMetaData = {} }) => {
 
             onClick={() => {
                 if (subMenuMetaData.url) {
-                    window.location.href = subMenuMetaData.url
+                    // window.location.href = subMenuMetaData.url
+                    navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
+                    navigate(subMenuMetaData.url)
                 }
             }}
         >
