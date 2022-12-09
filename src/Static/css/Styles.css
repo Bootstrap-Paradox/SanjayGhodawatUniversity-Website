@@ -554,6 +554,49 @@ body {
   height: auto;
 }
 
+.about-block {
+  position: relative;
+}
+.about-block img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 40vw;
+}
+.about-block .textual {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.about-block .textual h1 {
+  font-size: 67px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0;
+}
+.about-block .textual h1 strong {
+  font-weight: 600;
+  font-style: normal;
+}
+.about-block .textual div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.about-block .textual div p {
+  width: 20vw;
+}
+.about-block .textual p {
+  width: 50vw;
+  display: inline;
+  padding: 0.25em 0;
+  background: #FAFF7C;
+  color: #313131;
+  box-shadow: 0.5em 0 0 #FAFF7C, -0.5em 0 0 #FAFF7C;
+}
+
 .info-block {
   display: grid;
   grid-template-columns: 40% 1fr;
@@ -833,15 +876,21 @@ body {
 }
 
 .department-info {
-  display: grid;
-  grid-template-columns: -webkit-max-content 1fr;
-  grid-template-columns: max-content 1fr;
   margin: 3rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  height: auto;
 }
 .department-info-name {
   padding: 0.2rem 4rem;
   text-align: center;
+}
+@media (max-width: 700px) {
+  .department-info-name {
+    padding: 0.2rem 1rem;
+  }
 }
 .department-info-menu {
   padding: 0 2rem;
@@ -849,6 +898,7 @@ body {
   align-items: center;
   border-left: 1px solid #ccc;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 .department-info-menu-btn, .department-info-menu-btn-active > button {
   color: #343434;

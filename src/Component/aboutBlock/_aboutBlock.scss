@@ -1,0 +1,65 @@
+.about-block {
+    position: relative;
+
+    img {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 40vw;
+        // transform: rotate(2deg);
+    }
+
+    .textual {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+
+
+        h1 {
+            font-size: 67px;
+            font-weight: 300;
+            font-style: italic;
+            padding: 0;
+
+            strong {
+                font-weight: 600;
+                font-style: normal;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            p {
+                width: 20vw;
+            }
+        }
+
+        p {
+            width: 50vw;
+
+            display: inline;
+            padding: .25em 0;
+            background: #FAFF7C;
+            color: #313131;
+            box-shadow: .5em 0 0 #FAFF7C, -.5em 0 0 #FAFF7C;
+
+            // &::after {
+            //     content: "";
+            //     background-color: red;
+            //     position: absolute;
+            //     width: calc(100% + 4px);
+            //     height: 60%;
+            //     left: -2px;
+            //     bottom: 0;
+            //     z-index: -1;
+            //     transform: rotate(-2deg);
+            // }
+        }
+
+    }
+}

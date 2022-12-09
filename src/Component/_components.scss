@@ -1,3 +1,5 @@
+@import './aboutBlock/aboutBlock';
+
 .info-block {
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -54,9 +56,10 @@
 }
 
 
-.image-display-block {
-    .image-disply {}
-}
+// .image-display-block {
+//     .image-disply {
+//     }
+// }
 
 
 .promotional-section {
@@ -344,14 +347,25 @@
 }
 
 .department-info {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+    // display: grid;
+    // grid-template-columns: max-content 1fr;
     margin: 3rem 1rem;
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+
 
     width: 100%;
+    height: auto;
 
     &-name {
         padding: 0.2rem 4rem;
+
+        @media(max-width: 700px) {
+            padding: 0.2rem 1rem;
+        }
+
         text-align: center;
     }
 
@@ -361,6 +375,7 @@
         align-items: center;
         border-left: 1px solid #ccc;
         gap: 1.5rem;
+        flex-wrap: wrap;
 
         &-btn {
             color: #343434;

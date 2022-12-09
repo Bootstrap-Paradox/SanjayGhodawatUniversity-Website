@@ -5,6 +5,7 @@ import { SubPageLayout } from '../Component/subSection/subSection';
 import sggroupImage from '../Static/images/about/sggroup.jpg';
 import sguBannerImage from '../Static/images/banner/banner1.jpg';
 import menus from '../Component/navbar/menu';
+import AboutBlock from '../Component/aboutBlock/aboutBlock';
 
 export default function About() {
 
@@ -54,7 +55,16 @@ export default function About() {
             } />
             <Route path="/vision" element={
                 <SubPageLayout title="Vision" navigationInformation={subMenuData} >
-                    <h2>Work in Progress</h2>
+                    <AboutBlock title="Vision" displayData='Internationally recognized university of excellence in creating and disseminating knowledge through value-based quality education leading to betterment of mankind.' />
+                    <AboutBlock title="Mission"
+                        rotation='0deg'
+                        displayData={[
+                            "To prepare students for life-long learning and leadership in a global academic culture",
+                            "To create intellectual manpower relevant to the industry and society at large",
+                            "To collaborate with institutions of international repute for academic excellence",
+                            "To promote research and development through conducive environment",
+                            "To encourage entrepreneurship and skill development programs",
+                        ]} />
                 </SubPageLayout>
             } />
             <Route path="/accreditation" element={
