@@ -1,25 +1,33 @@
+.carousel-landing {
 
+    @media(max-width: 900px) {
+        margin-top: 98px
+    }
 
-.carousel-landing{
+    @media(min-width: 900px) {
+        margin-top: 132px;
+    }
 
-    .carousel-inner{
-        .carousel-item{
-            img{
-                @media(max-width: 700px){
+    .carousel-inner {
+        .carousel-item {
+            img {
+                @media(max-width: 700px) {
                     height: 50vh;
                     object-fit: cover;
                 }
-                @media(min-width: 700px) and (max-width: 1200px){
+
+                @media(min-width: 700px) and (max-width: 1200px) {
                     height: 60vh;
                     object-fit: cover;
                 }
-                @media(min-width: 1200px){
+
+                @media(min-width: 1200px) {
                     height: 757px;
                     object-fit: cover;
                 }
             }
 
-            .carousel-caption{
+            .carousel-caption {
                 background-color: white;
                 border-radius: 1rem;
 
@@ -34,7 +42,7 @@
 
 
 
-    .carousel-indicators{
+    .carousel-indicators {
         background-color: white;
         width: fit-content;
         margin-left: auto;

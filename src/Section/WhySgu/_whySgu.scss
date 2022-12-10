@@ -1,6 +1,6 @@
-.why-sgu{
+.why-sgu {
 
-    .title{
+    .title {
         margin-bottom: 2rem;
         // @media(max-width: 700px){
         //     margin-bottom: 2rem;
@@ -8,42 +8,43 @@
         // }
     }
 
-    .why-sgu-section{
+    .why-sgu-section {
 
         display: grid;
         grid-template-rows: max-content 1fr;
 
-        @mixin desktop{
-            @media(min-width: 1200px){
+        @mixin desktop {
+            @media(min-width: 1200px) {
                 @content;
             }
         }
 
-        @include desktop{
+        @include desktop {
             grid-template-columns: 2fr 1fr;
             grid-template-rows: 1fr;
         }
-    
-        .why-content{
+
+        .why-content {
             text-align: justify;
             display: flex;
             justify-content: center;
 
-            @include desktop(){
-                justify-content: start ;
+            @include desktop() {
+                justify-content: start;
             }
 
-            .description{
+            .description {
                 // font-size: 1.2rem;
                 width: 90%;
-                @include desktop(){
+
+                @include desktop() {
                     font-weight: 450;
                     font-size: 1.2rem;
                 }
             }
         }
 
-        .why-highlights{
+        .why-highlights {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -53,13 +54,13 @@
             margin: auto;
             margin-top: 3rem;
 
-            @include desktop(){
+            @include desktop() {
                 margin-top: auto;
                 flex-wrap: nowrap;
                 flex-direction: row;
             }
 
-            &-block{
+            &-block {
                 width: 277px;
                 height: 186px;
                 display: flex;
@@ -67,7 +68,7 @@
                 align-items: center;
                 justify-self: center;
 
-                @include desktop(){
+                @include desktop() {
                     max-width: 277px;
                     max-height: 186px;
                     width: 13vw;
@@ -81,14 +82,23 @@
 
                 margin: auto;
 
-                div{
+                div {
                     margin: auto;
-                    .highlight{
+
+                    .highlight {
                         font-size: 52px;
                         font-weight: bold;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                        div {
+                            margin: 0;
+                            padding: 0;
+                        }
                     }
 
-                    .description{
+                    .description {
                         font-weight: 600;
                         width: 80%;
                         margin: auto;

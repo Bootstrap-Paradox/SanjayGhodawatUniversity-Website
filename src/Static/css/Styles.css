@@ -1567,6 +1567,13 @@ body {
 .why-sgu .why-sgu-section .why-highlights-block div .highlight {
   font-size: 52px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.why-sgu .why-sgu-section .why-highlights-block div .highlight div {
+  margin: 0;
+  padding: 0;
 }
 .why-sgu .why-sgu-section .why-highlights-block div .description {
   font-weight: 600;
@@ -1574,6 +1581,16 @@ body {
   margin: auto;
 }
 
+@media (max-width: 900px) {
+  .carousel-landing {
+    margin-top: 98px;
+  }
+}
+@media (min-width: 900px) {
+  .carousel-landing {
+    margin-top: 132px;
+  }
+}
 @media (max-width: 700px) {
   .carousel-landing .carousel-inner .carousel-item img {
     height: 50vh;
