@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import PageDisplaySection, { PromotionalActionCenter, PromotionalPageLayout } from "../../Section/section_layout";
+import PageDisplaySection, { PromotionalActionCenter, PromotionalPageLayout } from "../../Section/sectionLayout";
 import { InfoBlock } from "../components";
 
 const SubMenuLayout = ({ title, navigationInformation }) => {

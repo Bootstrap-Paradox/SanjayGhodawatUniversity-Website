@@ -72,9 +72,6 @@ const YoutubeVideosCarousel = () => {
                 <YoutubeVideoComponent source='https://www.youtube.com/embed/z2yvgecWcPs' />
             </SwiperSlide>
             <SwiperSlide>
-                <YoutubeVideoComponent source="https://www.youtube.com/embed/IxofAlA4lm0" />
-            </SwiperSlide>
-            <SwiperSlide>
                 <YoutubeVideoComponent source="https://www.youtube.com/embed/37PX8zQN7go" />
             </SwiperSlide>
         </Swiper>

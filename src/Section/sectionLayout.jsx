@@ -3,8 +3,20 @@ import React from 'react';
 import background from '../Static/images/1.jpg';
 import { Search } from '../Static/svg_components/Icons';
 
-import managementpep from '../Static/images/management.jpg';
 import pepschat from '../Static/images/people_chatting.jpg';
+
+export function SectionLayout(props) {
+    return (
+        <section className="section">
+            <div className="title">
+                <h1>{props.sectionTitle}</h1>
+            </div>
+            <section>
+                {props.children}
+            </section>
+        </section>
+    )
+}
 
 function PageDisplaySection({ title = "", subTitle = "" }) {
     return (

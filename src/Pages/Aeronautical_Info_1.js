@@ -1,6 +1,6 @@
 import React from 'react';
 import { DeanDesk } from '../Component/components';
-import PageDisplaySection, { PromotionalActionCenter, PromotionalPageLayout } from '../Section/section_layout';
+import PageDisplaySection, { PromotionalActionCenter, PromotionalPageLayout } from '../Section/sectionLayout';
 import { useNavigate } from 'react-router-dom';
 
 export function AeronauticalInfo1() {

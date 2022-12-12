@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProfileCard } from '../Component/components';
-import { SubPageSection } from '../Section/section_layout';
-import PageDisplaySection, { PromotionalPageLayout, PromotionalActionCenter } from '../Section/section_layout';
+import { SubPageSection } from '../Section/sectionLayout';
+import PageDisplaySection, { PromotionalPageLayout, PromotionalActionCenter } from '../Section/sectionLayout';
 import { useNavigate } from 'react-router-dom';
 
 export function Profile() {

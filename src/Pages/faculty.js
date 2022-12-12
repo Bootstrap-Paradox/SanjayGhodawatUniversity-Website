@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import PageDisplaySection, { PromotionalActionCenter, PromotionalPageLayout } from '../Section/section_layout';
+import PageDisplaySection, { PromotionalActionCenter, PromotionalPageLayout } from '../Section/sectionLayout';
 
 import managementpep from '../Static/images/management.jpg';
 import pepschat from '../Static/images/people_chatting.jpg';
