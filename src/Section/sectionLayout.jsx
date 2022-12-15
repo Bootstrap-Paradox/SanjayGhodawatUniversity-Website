@@ -1,7 +1,6 @@
 import React from 'react';
 
 import background from '../Static/images/1.jpg';
-import { Search } from '../Static/svg_components/Icons';
 
 import pepschat from '../Static/images/people_chatting.jpg';
 

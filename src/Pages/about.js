@@ -27,6 +27,7 @@ export default function About() {
     ]
 
     const subMenuData = {
+        // "About": <url>
         "About SGU": menus['About Us']["About SGU"]['nested_links']['SGU'],
         "About Logo": menus['About Us']['About SGU']['nested_links']['SGU Logo'],
         "Sanjay Ghodawat Universtiy": menus['About Us']['About SGU']['nested_links']['Sanjay Ghodawat Group'],
@@ -39,22 +40,22 @@ export default function About() {
     return (
         <Routes>
             <Route path="/sgu" element={
-                <SubPageLayout title="SGU" navigationInformation={subMenuData}>
+                <SubPageLayout title="About" subTitle="SGU" navigationInformation={subMenuData}>
                     <InfoBlock title="About SGU" description={aboutSGU} image={sguBannerImage} />
                 </SubPageLayout>
             } />
             <Route path="/logo" element={
-                <SubPageLayout title="Logo" navigationInformation={subMenuData}>
+                <SubPageLayout title="About" subTitle="Logo" navigationInformation={subMenuData}>
                     <InfoBlock title="About Logo" description={aboutLogo} />
                 </SubPageLayout>
             } />
             <Route path="/sgg" element={
-                <SubPageLayout title="SGG" navigationInformation={subMenuData}>
+                <SubPageLayout title="SGG" subTitle="SGG" navigationInformation={subMenuData}>
                     <InfoBlock title="About SGG" description={aboutSGG} image={sggroupImage} />
                 </SubPageLayout>
             } />
             <Route path="/vision" element={
-                <SubPageLayout title="Vision" navigationInformation={subMenuData} >
+                <SubPageLayout title="About" subTitle='Vision' navigationInformation={subMenuData} >
                     <AboutBlock title="Vision" displayData='Internationally recognized university of excellence in creating and disseminating knowledge through value-based quality education leading to betterment of mankind.' />
                     <AboutBlock title="Mission"
                         rotation='0deg'

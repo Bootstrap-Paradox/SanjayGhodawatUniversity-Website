@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Home from './Pages/home';
 import NavBar from './Component/navbar/navbar';
 
@@ -7,12 +7,15 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import About from './Pages/about';
 import Footer from './Component/footer/footer';
-import Faculty from './Pages/faculty';
 import { AeronauticalInfo } from './Pages/Aeronautical_Info';
 import { Profile } from './Pages/profile';
-import { AeronauticalInfo1 } from './Pages/Aeronautical_Info_1';
+import SchoolProfile from './Pages/academics/schoolProfile';
+// import { AeronauticalInfo1 } from './Pages/academics/schoolProfile.jsx';
+
+const About = lazy(() => import('./Pages/about'))
+const Admissions = lazy(() => import('./Pages/admissions/admissions'))
+const Academics = lazy(() => import('./Pages/academics/academics'))
 
 function App() {
   return (
@@ -21,17 +24,40 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about/*" element={<About />} />
-          <Route path="/faculty" element={<Faculty />} />
+          <Route path="/about/*" element={
+            <SuspenseIt>
+              <About />
+            </SuspenseIt>
+          } />
+          <Route path="/admissions/*" element={
+            <SuspenseIt>
+              <Admissions />
+            </SuspenseIt>
+          } />
+          <Route path="/academics/*" element={
+            <SuspenseIt>
+              <Academics />
+            </SuspenseIt>
+          } />
+          <Route path="/school" element={<SchoolProfile />} />
           <Route path="/aeronautical-info" element={<AeronauticalInfo />} />
           <Route path="/aeronautical-profile" element={<Profile />} />
-          <Route path="/aeronautical-info-1" element={<AeronauticalInfo1 />} />
         </Routes>
         <Footer />
       </Router>
     </>
 
   );
+}
+
+const SuspenseIt = (props) => {
+  return (
+    <Suspense fallback={<div style={{
+      height: "100vh"
+    }}><h1>Loading</h1></div>}>
+      {props.children}
+    </Suspense>
+  )
 }
 
 export default App;

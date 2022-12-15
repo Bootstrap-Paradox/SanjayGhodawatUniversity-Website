@@ -31,15 +31,15 @@ const SubMenuLayout = ({ title, navigationInformation }) => {
     )
 }
 
-export function SubPageLayout({ title, navigationInformation, children }) {
+export function SubPageLayout({ title = "Explore", subTitle = "", navigationInformation, children }) {
     return (
         <section>
-            <PageDisplaySection title="Explore" subTitle="About Us" />
+            <PageDisplaySection title={title} subTitle={subTitle} />
             <PromotionalPageLayout
                 hidePromotions={true}
                 actionCenter={
                     <PromotionalActionCenter>
-                        <SubMenuLayout title={title} navigationInformation={navigationInformation} />
+                        <SubMenuLayout title={subTitle} navigationInformation={navigationInformation} />
                     </PromotionalActionCenter>
                 }
             >

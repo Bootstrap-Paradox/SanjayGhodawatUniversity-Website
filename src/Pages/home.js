@@ -1,19 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 // import "./styles.css";
-
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
-
-
-import Footer from '../Component/footer/footer';
-import NavBar from '../Component/navbar/navbar';
 import Highlights from '../Section/Highlights/highlights';
 import LandingCarousel from '../Section/LandingCarousel/landingCarousel';
 import Leadership from '../Section/Leadership/leadership';
@@ -22,12 +15,14 @@ import OurRecruiters from '../Section/OurRecruiters/ourRecruiters';
 import WhySgu from '../Section/WhySgu/whySgu';
 import YoutubeVideos from '../Section/YoutubeVideos/youtubeVideos';
 import '../Static/css/Styles.css'
+import ExperienceEducation from '../Section/ExperienceEducation/experienceEducation';
 
 
 
 
 
 export default function Home() {
+    const [open, setOpen] = useState(false);
     return (
         <>
 
@@ -37,9 +32,10 @@ export default function Home() {
 
                 <LandingCarousel />
                 <WhySgu />
+                <ExperienceEducation />
                 <NewsAndEvents />
                 <Highlights />
-                <YoutubeVideos />
+                {/* <YoutubeVideos /> */}
                 <OurRecruiters />
                 <Leadership />
             </section>

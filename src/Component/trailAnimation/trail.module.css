@@ -1,0 +1,43 @@
+.trailsText {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: black;
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    will-change: transform, opacity;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media (max-width: 1230px) {
+    .trailsText {
+        /* transform: scale(-2); */
+        font-size: 5rem;
+        line-height: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .trailsText {
+        font-size: 4rem;
+        /* text-align: center; */
+        line-height: 50px;
+        height: 50px;
+    }
+}
+
+.trailsText>div {
+    padding-right: 0.05em;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}

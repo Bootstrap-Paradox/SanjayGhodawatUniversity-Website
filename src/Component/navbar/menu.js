@@ -70,7 +70,7 @@ const menus = {
     },
     "Admissions": {
         "Overview": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/programme-ST", // programs offered and Intake
+            url: "/admissions/overview", // programs offered and Intake
             nested_links: {},
             image: ""
         },
@@ -103,36 +103,36 @@ const menus = {
     },
     "Academic": {
         "Schools & Departments": {
-            url: "/faculty",
+            url: "/academics/faculty",
             nested_links:
             {
             },
             image: team2,
         },
         "Academic Calender": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/academic-calendar",
+            url: "/academics/calender",
             nested_links:
                 {}
             ,
             image: team1,
         },
         "Academic Brochure": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/academic-brochure",
+            url: "/academics/brochure",
             nested_links: {},
             image: ""
         },
         "Foreign University Collaboration": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/collaboration-foreignUni",
+            url: "/academics/foreignUni-collab",
             nested_links: {},
             image: ""
         },
         "University Library": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/library-about",
+            url: "/academics/library",
             nested_links: {},
             image: ""
         },
         "Grievance Redressal Mechanism": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/grievence-complaint-form",
+            url: "/academics/grievence-complaint-form",
             nested_links: {},
             image: ""
         },

@@ -918,6 +918,74 @@ body {
   background-color: #343434;
 }
 
+.experience-education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 1230px) {
+  .experience-education {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 900px) {
+  .experience-education {
+    flex-direction: column;
+  }
+}
+.experience-education .textual-content {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ccc;
+  padding-left: 8rem;
+}
+@media (max-width: 1230px) and (min-width: 900px) {
+  .experience-education .textual-content {
+    padding: 0;
+    align-items: end;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-left: 1px solid #ccc;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .experience-education .textual-content {
+    padding: 0;
+    align-items: end;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+  }
+}
+.experience-education .textual-content p {
+  color: rgb(95, 95, 95);
+}
+@media (min-width: 700px) {
+  .experience-education .textual-content p {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 1230px) {
+  .experience-education .textual-content p {
+    text-align: start;
+    justify-self: end;
+    height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .experience-education .textual-content p {
+    text-align: start;
+    justify-self: end;
+    height: 100%;
+  }
+}
+
 .section {
   display: flex;
   justify-content: center;
