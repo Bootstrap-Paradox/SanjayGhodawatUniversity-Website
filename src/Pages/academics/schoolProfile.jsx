@@ -21,8 +21,8 @@ export default function SchoolProfile() {
     return (
         <SubPageLayout title="Explore" subTitle={displaySchoolName} navigationInformation={{
             "About": `/school?info=${schoolName}`,
-            "Faculty Profile": `/school?info=${schoolName}`,
-            "Programmes": `/school?info=${schoolName}`,
+            "Faculty Profile": `/school?info=${schoolName}&fetch=profiles`,
+            "Programmes": `/school?info=${schoolName}&fetch=programmes`,
         }} >
             <DeanDesk />
         </SubPageLayout>
