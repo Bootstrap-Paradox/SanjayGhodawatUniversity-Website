@@ -9,7 +9,7 @@ import newsData from './newsData';
 
 const NewsAndEventsContext = createContext();
 
-export default function NewsAndEvents() {
+export default function NewsPlusEvents() {
 
     const newsData = [
         {
@@ -44,7 +44,7 @@ export default function NewsAndEvents() {
 
 
     return (
-        <section className="container-fluid section news-and-events">
+        <section className="container-fluid section news-plus-events">
             <section className='title'>
                 <h1>News + Events </h1>
             </section>

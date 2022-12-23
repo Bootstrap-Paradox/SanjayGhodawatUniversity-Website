@@ -14,13 +14,13 @@ export default function Faculty() {
             facultyImage: pepschat,
             facultyData: {
                 "Computer Science": [
-                    { "B. Tech": "" },
+                    { "B. Tech": "/school?info=computer-science" },
                     { "M. Tech": "" },
                     { "B. Tech (Artificial Intelligence)": "" },
                     { "B. Tech (Data Science)": "" }
                 ],
                 "Design": [
-                    { "B. Des": "" },
+                    { "B. Des": "/school?info=design" },
                     { "M. Des": "" },
                     { "B. Des (Fashion)": "" },
                 ],
@@ -30,11 +30,11 @@ export default function Faculty() {
             facultyImage: managementpep,
             facultyData: {
                 "Commerce": [
-                    { "B. Com": "" },
+                    { "B. Com": "/school?info=commerce" },
                     { "M. Com": "" },
                 ],
                 "Management": [
-                    { "B. BA (Marketing)": "" },
+                    { "B. BA (Marketing)": "/school?info=management" },
                     { "B. BA (Finance)": "" },
                     { "B. BA (Agriculture)": "" },
                     { "M. BA (Marketing)": "" },

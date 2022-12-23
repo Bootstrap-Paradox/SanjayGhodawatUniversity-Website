@@ -10,12 +10,14 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import Highlights from '../Section/Highlights/highlights';
 import LandingCarousel from '../Section/LandingCarousel/landingCarousel';
 import Leadership from '../Section/Leadership/leadership';
-import NewsAndEvents from '../Section/NewsAndEvents/newsAndEvents';
+import NewsPlusEvents from '../Section/NewsAndEvents/newsPlusEvents';
 import OurRecruiters from '../Section/OurRecruiters/ourRecruiters';
 import WhySgu from '../Section/WhySgu/whySgu';
 import YoutubeVideos from '../Section/YoutubeVideos/youtubeVideos';
 import '../Static/css/Styles.css'
 import ExperienceEducation from '../Section/ExperienceEducation/experienceEducation';
+import { SectionLayout } from '../Section/sectionLayout';
+import NewsAndEvents from '../Section/NewsAndEvents/newsAndEvents';
 
 
 

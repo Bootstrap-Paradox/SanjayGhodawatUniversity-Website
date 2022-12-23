@@ -1,16 +1,182 @@
-.news-and-events{
+.news-and-events {
+    display: grid;
+    gap: 1rem;
+
+    @media (min-width: 1550px) {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    @media(max-width: 1550px) {
+        grid-template-rows: max-content max-content;
+    }
+
+    // font-family: 'Helvetica Neue';
+
+    .previous-highlight-area {
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+        border-radius: 2rem;
+        gap: 1rem;
+        max-width: 500px;
+
+        @media(max-width: 1550px) {
+            margin: auto;
+            margin-top: 3rem;
+        }
+
+        .previous-highlight-block {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            display: grid;
+            gap: 1rem;
+            text-align: start;
+            align-items: center;
+            cursor: pointer;
+            grid-template-columns: max-content 2fr;
+
+            .textual {
+                text-align: start;
+                width: 100%;
+
+                .date {
+                    color: rgb(153, 153, 153);
+                    font-size: 14px;
+                }
+
+                .btx {
+                    font-size: 14px;
+                    color: rgb(112, 112, 112)
+                }
+            }
+
+            .image {
+                width: 98px;
+                height: 98px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+    }
+
+    .news-highlight-block {
+
+        display: grid;
+        gap: 1rem;
+
+        @media(min-width: 1000px) {
+            grid-template-columns: max-content 2fr;
+        }
+
+        @media(max-width: 1000px) {
+            grid-template-rows: max-content max-content;
+        }
+
+
+        .image {
+            width: 420px;
+            height: 420px;
+            margin: auto;
+            padding: auto;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+
+            image {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .textual {
+        // background-color: red;
+        font-family: 'Helvetica Neue';
+        display: flex;
+
+        @media (max-width: 1000px) {
+            text-align: center;
+            margin: auto;
+        }
+
+        @media(max-width: 1000px) {
+            justify-content: center;
+            text-align: center;
+        }
+
+        flex-direction: column;
+
+        .btn-x {
+            @media(max-width: 1000px) {
+
+                margin: auto;
+                margin-top: 2rem;
+            }
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #0c6b49;
+            gap: 0.5rem;
+            width: max-content;
+            align-items: center;
+            cursor: pointer;
+
+            h6 {
+                margin-top: 0.4rem;
+            }
+
+            svg {
+                width: 1rem;
+                height: auto;
+            }
+        }
+
+        .date {
+            color: rgb(129, 129, 129);
+        }
+
+        h1 {
+            width: 100%;
+        }
+
+        p {
+            @media (max-width: 1000px) {
+                margin: auto;
+
+            }
+
+            width: 80%;
+            color: rgb(128, 128, 128);
+            margin-top: 1rem;
+            @include paragraph-overflow($clamp: 5);
+        }
+    }
+}
+
+
+
+.news-plus-events {
     background-color: #EDEDED;
 
-    .title{
+    .title {
         color: getColor(text);
     }
 
-    .carousel{
-        .carousel-inner{
+    .carousel {
+        .carousel-inner {
             display: flex;
 
-            .carousel-item{
-                .display-card{
+            .carousel-item {
+                .display-card {
                     flex: 1;
                 }
             }
@@ -22,7 +188,7 @@
     //     gap: 1rem;
     // }
 
-    .display-card{
+    .display-card {
         background-color: white;
         border-radius: 0.5rem;
 
@@ -35,14 +201,16 @@
         box-shadow: $smooth-shadow;
 
 
-        .image{
+        .image {
             margin: 0 1rem;
             display: flex;
             justify-content: center;
-            img{
-                @media (min-width: 700px){
-                        width: 70%;
+
+            img {
+                @media (min-width: 700px) {
+                    width: 70%;
                 }
+
                 width: 100%;
                 height: 200px;
                 border-radius: 0.5rem;
@@ -51,28 +219,29 @@
             }
         }
 
-        .textual{
+        .textual {
             margin-top: 47px;
             text-align: center;
-            
-            @media(min-width: 700px){
+
+            @media(min-width: 700px) {
                 padding: auto 2rem;
             }
 
-            h1{
+            h1 {
                 margin-bottom: 1.6rem;
                 font-weight: bold;
                 @include paragraph-overflow($clamp: 1);
             }
-            p{
+
+            p {
                 max-width: 524px;
                 width: 80vw;
-                margin: auto ;
+                margin: auto;
                 margin-bottom: 2.6rem;
                 @include paragraph-overflow($clamp: 6);
             }
 
-            button{
+            button {
                 background-color: #434343;
                 color: white;
                 font-weight: 600;
@@ -80,12 +249,12 @@
         }
     }
 
-    .display-card-x{
+    .display-card-x {
         background-color: white;
         border-radius: 0.5rem;
 
         max-width: 870px;
-        
+
         width: 90%;
 
         margin: auto;
@@ -94,19 +263,19 @@
 
         box-shadow: $smooth-shadow;
 
-        @media(min-width: 600px){
-
-        }
+        @media(min-width: 600px) {}
 
 
-        .image{
+        .image {
             margin: 0 1rem;
             display: flex;
             justify-content: center;
-            img{
-                @media (min-width: 700px){
-                        width: 70%;
+
+            img {
+                @media (min-width: 700px) {
+                    width: 70%;
                 }
+
                 width: inherit;
                 // max-height: 220px;
                 min-width: 586px;
@@ -116,33 +285,34 @@
             }
         }
 
-        .textual{
+        .textual {
             margin-top: 47px;
             text-align: center;
-            
+
             // @media(min-width: 700px){
             //     padding: auto 2rem;
             // }
 
-            h1{
+            h1 {
                 margin-bottom: 1.6rem;
                 font-weight: bold;
                 @include paragraph-overflow($clamp: 2);
             }
-            p{
+
+            p {
                 max-width: 524px;
                 width: 80%;
-                margin: auto ;
+                margin: auto;
                 margin-bottom: 2.6rem;
                 @include paragraph-overflow($clamp: 3);
 
                 @media (min-width: 600px) {
-                    @include paragraph-overflow($clamp:6);
-                    
+                    @include paragraph-overflow($clamp: 6);
+
                 }
             }
 
-            button{
+            button {
                 background-color: #434343;
                 color: white;
                 font-weight: 600;
@@ -155,9 +325,9 @@
     //     padding-top: 25px;
     //     padding-bottom: 1rem;
     //     position: relative;
-        
+
     //     // overflow: visible;
-        
+
 
 
     //     .carousel-inner{
@@ -183,7 +353,7 @@
     //     }
 
     //     // .carousel-control-prev{
-            
+
 
     //     //     .carousel-control-prev-icon{
     //     //         position: absolute;

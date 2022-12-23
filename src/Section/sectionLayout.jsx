@@ -10,7 +10,7 @@ export function SectionLayout(props) {
             <div className="title">
                 <h1>{props.sectionTitle}</h1>
             </div>
-            <section>
+            <section className={props.hasOwnProperty("sectionClassName") ? props.sectionClassName : ""}>
                 {props.children}
             </section>
         </section>

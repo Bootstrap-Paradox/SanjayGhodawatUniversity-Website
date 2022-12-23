@@ -1,11 +1,12 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import Home from './Pages/home';
 import NavBar from './Component/navbar/navbar';
 
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  useLocation
 } from "react-router-dom";
 import Footer from './Component/footer/footer';
 import { AeronauticalInfo } from './Pages/Aeronautical_Info';
@@ -18,6 +19,7 @@ const Admissions = lazy(() => import('./Pages/admissions/admissions'))
 const Academics = lazy(() => import('./Pages/academics/academics'))
 
 function App() {
+
   return (
     <>
       <Router>
