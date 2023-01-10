@@ -41,9 +41,8 @@ function App() {
               <Academics />
             </SuspenseIt>
           } />
-          <Route path="/school" element={<SchoolProfile />} />
-          <Route path="/aeronautical-info" element={<AeronauticalInfo />} />
-          <Route path="/aeronautical-profile" element={<Profile />} />
+
+          <Route path="/school/*" element={<SchoolProfile />} />
         </Routes>
         <Footer />
       </Router>

@@ -28,10 +28,22 @@ export function ImageDisplayBlock() {
     return (
         <div className="image-display-block">
             <div className="image-display-image">
-                <img />
+                <img src={image} />
             </div>
             <div className="image-display-text">
-                <h3 className="title"></h3>
+                <h3 className="title">title</h3>
+            </div>
+        </div>
+    )
+}
+
+export function DisplayImage({ title = "" }) {
+    return (
+        <div className='display-image'>
+            <img src={image} />
+            <div className="textual">
+                <h6>{title}</h6>
+
             </div>
         </div>
     )
@@ -59,28 +71,42 @@ export function DeanDesk() {
     )
 }
 
-export function ProfileCard() {
+export function ProfileCard({ facultyName = "Dr. V. S Khandal", }) {
+
+
+
+    const specialzation = [
+        "Thermal Power Engineering",
+        "Alternate fuels",
+        "Sustainable Energy",
+        "Sustainable Energy",
+    ]
+
     return (
-        <div className='faculty-profile' data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left" >
-            {/* <div className='faculty-profile-sgu-logo'>
+        <div className='faculty-profile' data-bs-toggle="tooltip" data-bs-placement="left" title="Click to Expand" >
+            <div className='faculty-profile-sgu-logo'>
                 <img src={sgulogo} />
-            </div> */}
+            </div>
             <div className='faculty-profile-image'>
                 <img src={khandal} />
             </div>
             <div className='faculty-profile-content'>
-                <h3>Dr. V. S Khandal</h3>
-                <p>Associate Professor</p>
-                {/* <p>M.Tech.(TPE), Ph.D.(Mechanical Engineering)</p> */}
+                <h3>{facultyName}</h3>
+                <p className="data">Associate Professor</p>
+                <p>M.Tech.(TPE), Ph.D.(Mechanical Engineering)</p>
 
-                {/* <div>
+                <div className="specialization-area">
                     <h3>Area of Specialization</h3>
-                    <p>Thermal Power Engineering, Alternate fuels, Sustainable Energy</p>
+                    <div className="specialization-block">
+                        {specialzation.map(
+                            (block, index) => <span>{block}</span>
+                        )}
+                    </div>
                 </div>
-                <div>
-                    <h3>Experience</h3>
+                <div className="experience">
+                    <p>Experience</p>
                     <p>12 Years</p>
-                </div> */}
+                </div>
             </div>
 
             <div className='faculty-profile-email'>

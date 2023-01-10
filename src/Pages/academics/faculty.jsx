@@ -14,7 +14,7 @@ export default function Faculty() {
             facultyImage: pepschat,
             facultyData: {
                 "Computer Science": [
-                    { "B. Tech": "/school?info=computer-science" },
+                    { "B. Tech": "/school/computer-science/about" },
                     { "M. Tech": "" },
                     { "B. Tech (Artificial Intelligence)": "" },
                     { "B. Tech (Data Science)": "" }

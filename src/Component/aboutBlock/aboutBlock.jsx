@@ -1,7 +1,9 @@
 import React from 'react';
 import image from '../../Static/images/people_chatting.jpg';
 
-export default function AboutBlock({ title = "", displayData = "", height = "500px", reverse = false, rotation = "2deg" }) {
+export default function AboutBlock(props) {
+
+    const { title = "", displayData = "", height = "500px", reverse = false, rotation = "2deg" } = props
 
     return (
         <div

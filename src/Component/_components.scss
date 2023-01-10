@@ -1,4 +1,5 @@
 @import './aboutBlock/aboutBlock';
+@import './columnLayouter/columnLayouter';
 
 .info-block {
     display: grid;
@@ -260,7 +261,6 @@
             }
         }
 
-
     }
 }
 
@@ -268,12 +268,14 @@
     box-shadow: $shadow;
     max-width: 415px;
     text-align: center;
+    height: min-content;
 
     position: relative;
 
     padding-top: 4rem;
+    padding-bottom: 0.1rem;
 
-    border-radius: 50px;
+    border-radius: 10px;
 
     &-sgu-logo {
         position: absolute;
@@ -282,7 +284,7 @@
 
         img {
 
-            width: 46px;
+            width: 36px;
             height: auto;
         }
     }
@@ -308,20 +310,49 @@
 
     &-content {
 
-        &>div {
-            margin: auto 2rem;
-            margin-top: 3rem;
-            border-top: solid 1px #ccc;
-            padding-top: 2rem;
 
-            p {
-                margin-top: 1.8rem;
+
+        .specialization-area {
+
+            background-color: rgb(243, 243, 243);
+            border-radius: 8px;
+
+            padding: 1rem 0.1rem;
+            margin: 1rem;
+
+            .specialization-block {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                padding: auto;
+
+                span {
+                    padding: 0.5px 8px;
+                    background-color: rgb(221, 221, 221);
+                    border-radius: 4px;
+                }
             }
-
         }
 
         p {
-            color: #b2b2b2;
+            color: #9b9b9b;
+        }
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8rem 2rem;
+
+        p {
+            &:nth-child(1) {
+                color: #393939;
+                font-size: 20px;
+            }
         }
     }
 
@@ -333,15 +364,48 @@
         margin: auto;
         display: flex;
         align-items: center;
-        border-radius: 6px 6px 0 0;
-
-        padding: 6px;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        padding: 6px 1rem;
+        cursor: pointer;
 
         p {
             font-size: 12px;
             color: white;
             margin: auto;
-            font-weight: bold;
+            font-weight: 600;
+        }
+    }
+
+    // &:hover {
+    //     height: 1200px;
+    // }
+}
+
+.display-image {
+    width: 300px;
+    height: auto;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+    padding-bottom: 0.2rem;
+    // background-color: rgb(239, 239, 239);
+    background-color: white;
+    box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.2);
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin: auto;
+        box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    .textual {
+        margin-top: 0.6rem;
+        margin-left: 0.4rem;
+
+        &>* {
+            font-weight: 400;
         }
     }
 }
