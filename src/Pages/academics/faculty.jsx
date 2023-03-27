@@ -51,11 +51,14 @@ export default function Faculty() {
                 <PageDisplaySection title="Explore Faculty" subTitle='Avaliable at SGU' />
                 <PromotionalPageLayout actionCenter={
                     <PromotionalActionCenter>
-                        <div className="action-btn">Faculty</div>
-                        <div className='action-search-field'>
-                            <input className='' type="text" placeholder="Search" />
-                            <div><Search /></div>
+                        <div className="faculty-action-center">
 
+                            <div className="action-btn">Faculty</div>
+                            <div className='action-search-field'>
+                                <input className='' type="text" placeholder="Search" />
+                                <div><Search /></div>
+
+                            </div>
                         </div>
                     </PromotionalActionCenter>}>
                     {

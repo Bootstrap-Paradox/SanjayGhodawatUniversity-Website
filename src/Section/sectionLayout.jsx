@@ -82,7 +82,9 @@ export function PromotionalPageLayout(props) {
 
                 <section className="promotional-layout">
 
-                    <section className='promotional-block'>
+                    <section style={{
+                        display: `${props.hidePromotions ? "none" : ""}`
+                    }} className='promotional-block'>
                         {props.hidePromotions ||
                             <div className='promotional-block-box'>
                                 <img src={pepschat} />
@@ -96,7 +98,9 @@ export function PromotionalPageLayout(props) {
                         {props.children}
                     </section>
 
-                    <section className='promotional-block'>
+                    <section style={{
+                        display: `${props.hidePromotions ? "none" : ""}`
+                    }} className='promotional-block'>
                         {props.hidePromotions ||
 
                             <div className='promotional-block-box'>

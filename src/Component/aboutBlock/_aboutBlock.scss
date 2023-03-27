@@ -1,6 +1,14 @@
 .about-block {
     position: relative;
 
+    position: grid;
+    grid-template-columns: max-content 1fr;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+
     img {
         position: absolute;
         z-index: 1;

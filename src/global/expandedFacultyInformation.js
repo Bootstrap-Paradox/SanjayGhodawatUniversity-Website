@@ -14,7 +14,7 @@ export const expandedFacultyInformation = {
                         "expandableData": [
                             {
                                 "Vision": [
-                                    "To impart quality education in computer science and engineering to produce industry ready engineers through competency based learning by collaborating with leading Institutes & Organizations with flexible learning.",
+                                    `To impart quality education in computer science and engineering to produce industry ready engineers through competency based learning by collaborating with leading Institutes & Organizations with flexible learning.`,
                                     {
                                         "ColumnLayouter": {
                                             "component": 'DisplayImage',
@@ -29,7 +29,7 @@ export const expandedFacultyInformation = {
                                                     "title": "Database Lab"
                                                 },
                                                 {
-                                                    "title": "Computer Lab"
+                                                    "title": "Computer Lab",
                                                 },
                                                 {
                                                     "title": "Data Science Lab"

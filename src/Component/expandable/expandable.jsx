@@ -4,12 +4,6 @@ import { useComponentList } from '../../PageBuilder/pageBuilder';
 
 export default function ExpandableLayouter({ expandableInnerData }) {
 
-
-    const navigate = useNavigate();
-    const navigation = (path) => {
-        alert("hello")
-    }
-
     const [ComponentList, LayouterList] = useComponentList();
 
     const time = new Date().getTime().toString()
@@ -40,7 +34,7 @@ export default function ExpandableLayouter({ expandableInnerData }) {
 
                                                                 if (listView[componentName].hasOwnProperty("component")) {
                                                                     return (
-                                                                        <React.Fragment>
+                                                                        <React.Fragment key={index}>
                                                                             <br></br>
                                                                             <br></br>
                                                                             {

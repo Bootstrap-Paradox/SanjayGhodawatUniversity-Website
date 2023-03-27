@@ -8,14 +8,14 @@ const SubMenuLayout = ({ title, navigationInformation }) => {
     // const displayTitle = 
 
     return (
-        <section className="department-info">
-            <div className="department-info-name">
+        <section className="sub-page-menu-layout">
+            <div className="sub-page-menu-layout-name">
                 <h2>About {
                     title.split(" ").map((word, index) => { return <span key={index}><br></br>{word}</span> })
                 }</h2>
             </div>
 
-            <div className="department-info-menu">
+            <div className="sub-page-menu-layout-menu">
                 {
                     Object.entries(navigationInformation).map(
                         ([subMenuTitle, subMenuLink], index) => {
@@ -27,10 +27,10 @@ const SubMenuLayout = ({ title, navigationInformation }) => {
                             return (
                                 <NavLink key={index}
                                     to={subMenuLink}
-                                    className={({ isActive }) => isActive ? "department-info-menu-btn-active" : undefined}
+                                    className={({ isActive }) => isActive ? "sub-page-menu-layout-menu-btn-active" : undefined}
                                     end
                                 >
-                                    <button className="department-info-menu-btn">{subMenuTitle}</button>
+                                    <button className="sub-page-menu-layout-menu-btn">{subMenuTitle}</button>
                                 </NavLink>
                             )
                         }

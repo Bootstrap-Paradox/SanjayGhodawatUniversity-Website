@@ -68,6 +68,13 @@ const menus = {
             image: ""
         }
     },
+    "school": {
+        "School of Computer Science": {
+            url: "/school/computer-science",
+            nested_links: {},
+            image: "",
+        }
+    },
     "Admissions": {
         "Overview": {
             url: "/admissions/overview", // programs offered and Intake
