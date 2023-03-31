@@ -82,7 +82,7 @@ const FacultyBlock = ({ facultyTitle = "Technology", facultyData = {}, facultyIm
 
     return (
         <div className='faculty-info-block'>
-            <img src={facultyImage} />
+            <img src={facultyImage} alt="" />
             <section className='faculty-info'>
                 <h3 className='faculty-title'>Faculty of {facultyTitle}</h3>
 

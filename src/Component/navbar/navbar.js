@@ -39,7 +39,8 @@ export default function NavBar() {
                 <div className="container-fluid navbar navbar-custom navbar-light bg-light">
                     <Brand />
                     <Menu />
-                    <ContactCTA />
+                    <ApplyNowButton />
+                    {/* <ContactCTA /> */}
                     <HamburgerIcon toggleMobileNavigationOpen={toggleMobileNavigationOpen} setToggleMobileNavigationOpen={setToggleMobileNavigationOpen} />
                     <div></div>
                 </div>
@@ -93,6 +94,12 @@ const ContactCTA = () => {
                 <p className="number">1800 31300 1566</p>
             </div>
         </div>
+    )
+}
+
+const ApplyNowButton = () => {
+    return (
+        <button className='custom-btn apply-now'>Apply Now</button>
     )
 }
 

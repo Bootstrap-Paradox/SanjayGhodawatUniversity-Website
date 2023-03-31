@@ -1,0 +1,50 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
+export default function CarouselComponent(props) {
+    const {
+        title = "",
+        description = "",
+        image = "",
+        imageAlt = "",
+    } = props
+    return (
+        <div id="carouselBannerCaptions" className="carousel carousel-dark carousel-landing slide" data-bs-ride="carousel">
+            <div className="carousel-indicators">
+                {landingData.map((data, index) => {
+                    return (
+                        <button key={index} type="button" data-bs-target="#carouselBannerCaptions" data-bs-slide-to={`${index}`} className={`${index === 0 ? "active" : ""}`} aria-current={`${index === 0 ? "true" : ""}`} aria-label={`Slide ${index + 1}`}></button>
+                    )
+                })}
+                {/* <button type="button" data-bs-target="#carouselBannerCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBannerCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBannerCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> */}
+            </div>
+            <div className="carousel-inner">
+                {landingData.map((data, index) => {
+                    return (
+                        <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+                            <img src={data.image} className="d-block w-100" alt={data.imageAlt} />
+                            {data.title !== "" &&
+                                <div className="carousel-caption d-none d-md-block">
+                                    <h5>{data.title}</h5>
+                                    <p>{data.description}</p>
+                                </div>
+                            }
+                        </div>
+                    )
+                })}
+
+            </div>
+            <button className="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselBannerCaptions" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselBannerCaptions" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+        </div>
+    )
+}

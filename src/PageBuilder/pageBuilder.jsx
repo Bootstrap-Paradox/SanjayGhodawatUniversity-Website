@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { SubPageLayout } from '../Component/subSection/subSection';
-import { expandedFacultyInformation } from '../global/expandedFacultyInformation';
+import { expandedFacultyInformation } from '../Pages/academics/expandedFacultyInformation';
 import AboutBlock from '../Component/aboutBlock/aboutBlock';
 import { DeanDesk, DisplayImage, InfoBlock, ProfileCard } from '../Component/components';
 import TableLayout from '../Component/tableLayout/tableLayout';
