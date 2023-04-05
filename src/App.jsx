@@ -13,6 +13,7 @@ import Footer from './Component/footer/footer';
 import SchoolProfile from './Pages/academics/schoolProfile';
 import Layover from './Component/layover/layover';
 import { DeanDesk } from './Component/components';
+import MainPageLayout from './Pages/buildPagesHere/mainPageLayout';
 // import { AeronauticalInfo1 } from './Pages/academics/schoolProfile.jsx';
 
 const About = lazy(() => import('./Pages/about'))
@@ -54,6 +55,9 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path='/*' element={
+              <MainPageLayout />
+            } />
             <Route path="/about/*" element={
               <SuspenseIt>
                 <About />
@@ -70,7 +74,7 @@ function App() {
               </SuspenseIt>
             } />
 
-            <Route path="/school/*" element={<SchoolProfile />} />
+            {/* <Route path="/faculty/*" element={<SchoolProfile />} /> */}
           </Routes>
           <Footer />
         </Router>

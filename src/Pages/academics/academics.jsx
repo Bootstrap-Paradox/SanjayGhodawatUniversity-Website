@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Faculty from './faculty';
+import Faculty from './schools';
 
 export default function Academics() {
     return (

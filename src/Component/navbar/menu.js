@@ -70,7 +70,7 @@ const menus = {
     },
     "school": {
         "School of Computer Science": {
-            url: "/school/computer-science",
+            url: "/faculty/computer-science",
             nested_links: {},
             image: "",
         }

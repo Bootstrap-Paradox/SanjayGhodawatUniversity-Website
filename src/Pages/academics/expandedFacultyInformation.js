@@ -447,6 +447,454 @@ export const expandedFacultyInformation = {
             ]
         },
     },
+    "Aerospace": {
+        "about": {
+            'builder': [
+                {
+                    "DeanDesk": {
+                        "title": "Testing",
+                        "displayData": "Testing This Feature with the page Builder",
+                        "height": "500px",
+                    }
+                },
+                {
+                    "ExpandableLayouter": {
+                        "expandableData": [
+                            {
+                                "Vision": [
+                                    `To impart quality education in computer science and engineering to produce industry ready engineers through competency based learning by collaborating with leading Institutes & Organizations with flexible learning.`,
+                                    {
+                                        "ColumnLayouter": {
+                                            "component": 'DisplayImage',
+                                            "componentData": [
+                                                {
+                                                    "title": "Computer Lab"
+                                                },
+                                                {
+                                                    "title": "Data Science Lab"
+                                                },
+                                                {
+                                                    "title": "Database Lab"
+                                                },
+                                                {
+                                                    "title": "Computer Lab",
+                                                },
+                                                {
+                                                    "title": "Data Science Lab"
+                                                },
+                                                {
+                                                    "title": "Database Lab"
+                                                },
+                                                {
+                                                    "title": "Computer Lab"
+                                                },
+                                                {
+                                                    "title": "Data Science Lab"
+                                                },
+                                            ]
+                                        }
+                                    },
+                                ]
+                            },
+                            {
+                                "Mission": [
+                                    "To develop Software professionals with excellent technical knowledge, innovative ideas, entrepreneurship skills and professional ethics.",
+                                    "To provide quality engineering education through state of art learning amenities in Computer science engineering.",
+                                    "To establish Industry Institute Interaction to make students ready for the industrial environment & develop entrepreneurship skills.",
+                                    "To undertake collaborative projects which offer opportunities for long-term interaction with academia and industry",
+                                    "To pursue creative research and new technologies in Computer Science and Engineering across disciplines in order to serve the needs of industry, government, society, and the scientific community",
+                                ]
+                            },
+                            {
+                                "POEs (Program Education Objective)": [
+                                    "To prepare students with a strong foundation in the mathematical, scientific and engineering fundamentals necessary to formulate, solve and analyse engineering problems",
+                                    "To prepare them for higher (graduate) studies, R&D, consultancy and higher Learning through Value Based Quality Education",
+                                    "To provide exposure to emerging cutting edge technologies, adequate training & opportunities to work as teams on multidisciplinary projects with effective communication skills and leadership qualities.",
+                                    "To develop an aptitude for lifelong learning required to cope up with latest developments in IT Sector through value added programs.",
+                                    "To adapt to different roles and demonstrate leadership in global IT environment by respecting diversity, professionalism and ethical practices",
+                                ]
+                            },
+                            {
+                                "POs (Program Outcomes)": [
+                                    "An ability to apply knowledge of mathematics, science, and engineering to solve Computer Science & Engineering problems.",
+                                    "An ability to use research methods to design and conduct experiments to investigate complex problems, as well as to analyze and interpret data.",
+                                    "An ability to design a system, component, or process to meet the desired economic, social, and environmental needs with appropriate consideration for public health and safety.",
+                                    "An ability to function effectively individually and in team, and in multidisciplinary environment",
+                                    "An ability to identify, formulate, study, analyze and solve problems using the first principles of mathematics and natural sciences as well as computer science & engineering techniques",
+                                    "An understanding of professional and ethical responsibilities in professional engineering practiceAn ability to communicate effectively in both verbal and written form in the profession.",
+                                    "An ability to acquire the broad education necessary to understand the impact of engineering solutions in an environmental and societal context",
+                                    "Recognition of the need for, and an ability to engage in lifelong learning.",
+                                    "An ability to apply knowledge of contemporary issues to assess the societal, legal and cultural issues related to the practice of computer science and engineering.",
+                                    "An understanding of the modern engineering tools and management principles required for software project development.",
+                                    "An ability to apply principles of management and finance to multidisciplinary projects as an individual or as a project team",
+                                ]
+                            },
+                            {
+
+                                "PSO (Program Specific Outcomes": [
+                                    "An ability to identify real time problems and solve them using standard practices in algorithms, System software and network technology.",
+                                ]
+                            }
+
+                        ]
+                    }
+                }
+
+            ],
+            "image": "",
+        },
+        "faculty-profile": {
+            'builder': [
+                {
+                    "ColumnLayouter": {
+                        "component": "FacultyProfileCard",
+                        "componentData": [
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                            },
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                            },
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                            },
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                            },
+                        ]
+                    }
+                }
+            ]
+        },
+        "board-of-studies": {
+            'builder': [
+                {
+                    "TableLayout": {
+                        "tableHeads": ["Name", "Project Title", "Funding Agency", "Amount (in Rs.)", "Remark"],
+                        "tableData": [
+                            // ["Dr. D. P. Nade", "To study the relation between mesospheric gravity waves and equatorial plasma bubbles using images OI 557.7nm and OI 630.0 nm from Kolhapur", "Department of Science and Technology (DST), the Science and Engineering Research Board (SERB)", "24,32,399", "Submitted"],
+                            ["Dr. XYX", "To study the relation between mesospheric gravity waves and equatorial plasma bubbles using images OI 557.7nm and OI 630.0 nm from Kolhapur", "Department of Science and Technology (DST), the Science and Engineering Research Board (SERB)", "", "Submitted"],
+                            ["Dr. Hello", "To study the relation between mesospheric gravity waves and equatorial plasma bubbles using images OI 557.7nm and OI 630.0 nm from Kolhapur", "Department of Science and Technology (DST), the Science and Engineering Research Board (SERB)", "24,32,399", "Submitted"],
+                        ]
+                    }
+                },
+            ]
+        },
+        "infrastructure": {
+            builder: [
+                {
+                    "ColumnLayouter": {
+                        component: "DisplayImage",
+                        componentData: [
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                        ]
+
+                    }
+                }
+            ]
+        },
+        "placements": {
+            builder: [
+                {
+                    "ExpandableLayouter": {
+                        "expandableData": [
+                            {
+                                "2020 - 2021": [
+                                    "hello Navigation"
+                                ],
+                            },
+                            {
+                                "2021 - 2022": [
+                                    "data"
+                                ],
+                            },
+                            {
+                                "2022 - 2023": [
+                                    "data"
+                                ],
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "achievements": {
+            builder: [
+
+            ]
+        },
+        "activites": {
+            builder: [
+                {
+                    "ExpandableLayouter": {
+                        expandableData: [
+                            {
+                                "Parents Meet": [
+                                    "Parents meet organized on 11th August 2018 for Odd semester.",
+                                    "Parents meet organized on 22nd January 2019 for Even semester.",
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "publications": {
+            builder: [
+                {
+                    "ExpandableLayouter": {
+                        expandableData: [
+                            {
+                                "Publications": [
+                                    "Publications for AY 2018-19.",
+                                    "Publications for AY 2019-20.",
+                                    "Publications for AY 2020-21.",
+
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "research": {
+            builder: [
+                {
+                    "ExpandableLayouter": {
+                        expandableData: [
+                            {
+                                "Faculty Research Interset Group": [
+                                    "A Research Interest Group (RIG) is a cluster of faculty, researchers and PhD students working on a common research theme. These groups evolve over time and represent emerging areas of research strength in the department. RIGs provide a forum for researchers from across disciplines, and the community to work collaboratively. They also seek funding opportunities for the purpose of conducting innovative research on specific topics.",
+
+                                ]
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+        "acses": {
+            builder: [
+                {
+                    "InfoBlock": {
+                        "title": "ACSES",
+                        "description": [
+                            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto mollitia eaque corrupti beatae provident sunt voluptatibus impedit libero pariatur, error magni, ipsum similique molestiae quis illum est exercitationem neque sit rerum explicabo aperiam dolor laboriosam perferendis. Nulla dignissimos eius deserunt magni in debitis at facilis ipsam non maiores, voluptas odio nisi natus, repudiandae dolore veniam! Ratione doloremque eaque officiis at culpa aliquam porro nemo consequuntur nobis quia tempore, repellendus cumque fuga suscipit perspiciatis blanditiis quisquam ut consequatur ea? Fugit incidunt, deserunt quisquam esse quibusdam, odio illo eum dicta aut aperiam maxime accusamus ullam laboriosam porro, distinctio officiis temporibus! Praesentium, voluptate? Sapiente ipsum consectetur fugiat iusto dolor hic. Ut ratione officiis molestiae eos nulla id in odit, aliquam unde, doloribus dolor!",
+                        ],
+                    }
+                },
+                {
+                    "ExpandableLayouter": {
+                        "expandableData": [
+                            {
+                                "Events under ACSES at Sanjay Ghodawat University": [
+                                    "Blind Coding Compitition on 15th September 2019.",
+                                    "Chess and Carrom Compititioin on 14th September 2019.",
+                                    "All events Conducted for AY 2018-19",
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "csi": {
+            builder: [
+                {
+                    "InfoBlock": {
+                        "title": "CSI",
+                        "description": [
+                            "CSI has been a prestigious Association in our university since its inception.It has been working rigorously focusing on the improvement of the students as well as the department in all aspects.",
+                            "Our vision is to make the CSE department as a full - fledged branch where each student thinks out of the box and gains beyond his dreams.",
+                            "Computer Society of India is the first and largest body of computer professionals in India.",
+                            "It was started on 6 March 1965 by a few computer professionals and has now grown to be the national body representing computer professionals.It has 72 chapters across India, 511 student branches, and more than 100, 000 members.Since 1974, when CSI became a member of IFIP that is International Federation for Information Processing, CSI has organized many IFIP sponsored events.",
+                        ],
+                    }
+                },
+                {
+                    "ExpandableLayouter": {
+                        expandableData: [
+                            {
+                                "Student Branch Co-ordinator": [
+                                    // {
+                                    //     "ColumnLayouter": {
+                                    //         component: "DisplayImage",
+                                    //         componentData: [
+                                    //             {
+                                    //                 "title": "Prof. Arage Chetan Arage",
+                                    //             }
+                                    //         ]
+                                    //     }
+                                    // }
+                                ]
+                            },
+                            // 
+                            {
+                                "Membership Benefits": [
+                                    {
+                                        "ExpandableLayouter": {
+                                            expandableData: [
+                                                {
+                                                    "Institution Membership": [
+                                                        "Recognition by Accreditation bodies for association with a professional organization.",
+                                                        "Grant of Free nominee membership to three faculty members with voting rights & log -in privilege on CSI knowledge portal.",
+                                                        "4 copies of CSI Communications every month.",
+                                                        "Access to CSI knowledge portal and distinguished speaker list and eligibility for volunteering to be a speaker.",
+                                                        "Eligibility to apply for assistance to attend International conferences.",
+                                                    ],
+                                                },
+                                                {
+                                                    "Student Branches (All Advantages of IM Plus)": [
+                                                        "Eligibility for nomination of best Student Branch award.",
+                                                        "Additional 4 copies of CSI Communications to the institution & log -in privilege to the students on CSI knowledge portal.",
+                                                        "Attachment to a Regional Student coordinator & National Student coordinator for assistance with resource persons for various events and chapter support to organize seminars / workshops / tutorials / competitions / Expo.",
+                                                        "Invitation for all Regional/ State / National student conventions / conferences and competitions.",
+                                                        "Concessional rates for CSI Conferences and Tutorials for student members.",
+                                                        "Opportunity for students to interact with Industry professionals.",
+                                                        "Eligibility to publish articles in CSI communications and journal for student members.",
+                                                        "Eligibility to be nominated for the best Student paper in CSI communications.",
+                                                        "Eligibility for CSI funded minor projects(for College Students).",
+                                                        "CSI Certification and Training programs at discounted rates for students.",
+                                                        "Permission to conduct events under CSI Banner.",
+                                                    ],
+                                                },
+                                                {
+                                                    "Individual Membership": [
+                                                        "Access to CSI Knowledge Portal with a unique login ID and Password.",
+                                                        "Opportunity for member to member virtual networking through CSI Communities, Forums, Blogs.",
+                                                        "Both print and electronic versions of CSI- Communications each month.",
+                                                        "Right to vote in CSI elections.",
+                                                        "Concessional registration fee for CSI events and training programs",
+                                                        "Opportunity to offer workshops/ trainings on profit sharing basis in collaboration with CSI.",
+                                                        "Opportunity to deliver guest lectures in educational institutes associated to CSI across India.",
+                                                        "Opportunities to benefit from CSI affiliations with sister societies and collaborating organisations such as IEEE, Project Management Institute, C- DAC, Singapore Computer Society",
+                                                        "Opportunity to participate in CSI Divisional research projects.",
+                                                        "Financial support for minor research projects.",
+                                                        "Part sponsorship for presenting papers at prestigious International events",
+                                                    ],
+                                                },
+                                            ]
+                                        }
+                                    }
+
+                                ]
+                            },
+                            // 
+                            {
+                                "Benefits and Advantages to CSI Student members": [
+                                    {
+                                        "ExpandableLayouter": {
+                                            expandableData: [
+                                                {
+                                                    "Recognition": [
+                                                        "CSI membership identity card.",
+                                                        "Appreciation letter / certificate for performance excellence.",
+                                                        "Industry recognized CSI certification opportunities.",
+                                                    ],
+                                                },
+                                                {
+                                                    "Knowledge Enhancement": [
+                                                        "Access to CSI knowledge portal through <strong>Login- id and password.</strong>",
+                                                        "Technology updates through Conferences, Seminars, Tutorials & workshop at discounted rates.",
+                                                        "A forum for activities like Paper Presentations, Quiz, Competitions and Exhibitions.",
+                                                        "Ability to connect with distinguished speakers on different technology areas.",
+                                                    ]
+                                                },
+
+                                                {
+                                                    "CSI Publication": [
+
+                                                        "CSI Communications - Monthly Magazine(soft copy with option for hard copy at additional payment).",
+                                                        "CSI eNewsletter.",
+                                                        "Eligibility to publish articles in CSI communications, journal.",
+                                                    ],
+                                                },
+                                                {
+                                                    "Awards": [
+
+                                                        "Eligibility to be nominated for the best Student paper in CSI communications.",
+                                                        "Best Student Branch award(only for Student Branch and not applicable for individual student members).",
+                                                    ],
+                                                },
+                                                {
+                                                    "R & D": [
+                                                        "CSI Minor Research project funding up to Rs. 50000/-."
+
+                                                    ],
+                                                },
+                                                {
+                                                    "CSI events": [
+                                                        "Discounted registration fee for CSI conventions & seminars",
+                                                        "Besides the activities held at the Chapters and Student Branches, the Society also conducts periodic conferences, seminars.",
+                                                        "We believe that “Practice makes a man perfect” and we constantly endeavor to achieve our aim.",
+                                                        "Today's world depends on thousands of those engineers who design, produce, operate and maintain a vast array of equipment and services to revolutionize the way we live.",
+                                                        "Career paths for engineers vary in many ways.In general, an engineer's position stresses theory, analysis, and design.",
+                                                        "Computer science covers computer architecture, programming languages, algorithms, computations and theories.Students will have to study topics such as modeling, robotics, artificial intelligence, security and Internet systems, among others.",
+                                                    ],
+                                                }
+                                            ]
+                                        }
+                                    }
+
+                                ],
+                            },
+                        ]
+                    }
+                }
+            ]
+        },
+        "photo-gallery": {
+            builder: [
+
+            ]
+        },
+        "alumni": {
+            builder: [
+
+            ]
+        },
+        "downloads": {
+            builder: [
+
+            ]
+        },
+    },
     // "faculty-template": {
     //     "about": [],
     //     "profile": [],
