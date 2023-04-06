@@ -285,7 +285,7 @@ const menus = {
     "Campus Life": {
         "Photo Gallary": {
             url: "http://www.sanjayghodawatuniversity.ac.in/photogallery-academic",
-            nested_links: {" Academic":"/photogallary/academic","Events":"/photogallary/evenet"," Celebrations":,"/photogallary/celebration","National Festivals":"/photogallary/Festivals","Social Gathering 'UMANG'":,"photogallary/SocialGathering2023","Celebrities":,"photogallary/Celebrities"},
+            nested_links: {" Academic":"/photogallary/academic","Events":"/photogallary/evenet","Celebrations":"/photogallary/celebration","National Festivals":"/photogallary/Festivals","Social Gathering 'UMANG'":"photogallary/SocialGathering2023","Celebrities":"photogallary/Celebrities"},
             image: team1,
         },
         "Clubs and Associations": {
