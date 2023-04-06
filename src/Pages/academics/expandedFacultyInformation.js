@@ -1,6 +1,6 @@
 export const expandedFacultyInformation = {
     "computer-science": {
-        "about": {
+        "info": {
             'builder': [
                 {
                     "DeanDesk": {
@@ -118,6 +118,8 @@ export const expandedFacultyInformation = {
                                 "facultyName": "Dr. V. S. Khandal",
                                 "designation": "Associate Profressor",
                             },
+									{
+                                "facultyName": "Dr. S. M Doe"}
                         ]
                     }
                 }
@@ -452,6 +454,7 @@ export const expandedFacultyInformation = {
             ]
         },
     },
+
     "Aerospace": {
         "about": {
             'builder': [
@@ -900,6 +903,7 @@ export const expandedFacultyInformation = {
             ]
         },
     },
+
     // "faculty-template": {
     //     "about": [],
     //     "profile": [],

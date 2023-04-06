@@ -2,6 +2,8 @@
 import team1 from '../../Static/images/team1.jpg';
 import team2 from '../../Static/images/team2.jpg';
 import team3 from '../../Static/images/team3.jpg';
+import banner7 from '../../Static/images/banner/banner7.JPG';
+
 
 
 import uni_top_view from '../../Static/images/menus/university_top_view.jpeg';
@@ -69,47 +71,139 @@ const menus = {
         }
     },
     "school": {
+
         "School of Computer Science": {
             url: "/faculty/computer-science",
             nested_links: {},
+				image: banner7,
+		},
+
+        "FACULTY OF TECHNOLOGY": {
+            url: "/school/computer-science",
+            nested_links: {"Aerospace Engineering":"/faculty/Aerospace","Mechanical Engineering":"/faculty/Mechanical","Civil Engineering":"/faculty/Civil","Electrical and Electronics Engineering":"/faculty/EEE"},
             image: "",
-        }
-    },
+        },
+		"FACULTY OF ARCHITECTURE": {
+            url: "/school/computer-science",
+            nested_links: {"Architecture":"/faculty/Architecture","Design":"/faculty/Design"},
+            image: "",
+		},
+		 "FACULTY OF COMPUTER SCIENCE AND APPLICATIONS": {
+            url: "/school/computer-science",
+            nested_links: {"School of Computer Science & Engineering":"/faculty/computerscience","BCA":"/faculty/BCA","MCA":"/faculty/MCA"},
+            image: "",
+		},
+		 "FACULTY OF COMMERCE AND MANAGEMENT": {
+            url: "/school/computer-science",
+            nested_links: {"School Of Commerce":"/faculty/Commerce","School of Management":"/faculty/Management"},
+            image: "",
+		},
+		 "FACULTY OF PHARMACEUTICAL & ALLIED HEALTH SCIENCES": {
+            url: "/school/computer-science",
+            nested_links: {"School of Pharmacy":"/faculty/pharmacy","School of Allied Health Sciences":"/faculty/foodscience"},
+            image: "",
+		},
+		 "FACULTY OF SCIENCE": {
+            url: "/school/computer-science",
+            nested_links: {"School of Chemical Sciences":"/faculty/chemical","School of Physical Sciences":"/faculty/physical","School of Interdisciplinary Sciences":"/faculty/interdisciplinary","Department of Mathematics":"/faculty/mathematics"},
+            image: "",
+		},
+		 "FACULTY OF LIBERAL ARTS": {
+            url: "/school/computer-science",
+            nested_links: {"Department of Foreign language":"/faculty/foreign","Department of Humanities and Social Sciences":"/faculty/hunabities","Department of journalism and mass Communication":"/faculty/jmc"},
+            image: "",
+		},
+
+
+		},
+		
     "Admissions": {
-        "Overview": {
+        "Programs Offered & Intake": {
             url: "/admissions/overview", // programs offered and Intake
             nested_links: {},
             image: ""
         },
-        "Why SGU?": {
+        "Fee Structure": {
             url: "", // Not Found
             nested_links: {},
             image: ""
         },
-        "Eligibility": {
+        "Ph.D Admission": {
             url: "http://www.sanjayghodawatuniversity.ac.in/admission-eligibility-criteria",
             nested_links: {},
             image: ""
         },
-        "Application Procedure": {
+        "Scholarships": {
             url: "http://www.sanjayghodawatuniversity.ac.in/admission-apply", // How to apply
             nested_links: {},
             image: ""
         },
-        "Fee Structure": {
+        "How to Apply": {
             url: "http://www.sanjayghodawatuniversity.ac.in/fee-structure",
             nested_links: {},
             image: ""
         },
-        "Scholarship": {
+        "Facilities Provided": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Online Admission Enquiry": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Admission Fee Bank Details": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Eligibility Criteria & Selection Process": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Documents Required": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Admission Policy": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Reservation Policy": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"SGU Entrance Test": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Contact Admission & Marketing Cell": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"Admission Cut Off 2022-2023": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
+            nested_links: {},
+            image: ""
+        },
+		"FAQ's": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
 
+
+
     },
     "Academic": {
-        "Schools & Departments": {
+        "Academic Schedule": {
             url: "/academics/faculty",
             nested_links:
             {
@@ -143,35 +237,55 @@ const menus = {
             nested_links: {},
             image: ""
         },
+		"Industry Collaborations": {
+            url: "/academics/grievence-complaint-form",
+            nested_links: {},
+            image: ""
+        },
+        "Beyond Studies": {
+            url: "/academics/grievence-complaint-form",
+            nested_links: {},
+            image: ""
+        },
+        "Caste Based Discrimination Complaint": {
+            url: "/academics/grievence-complaint-form",
+            nested_links: {},
+            image: ""
+        },
     },
-    "Research": {
-        "PH.D Program": {
+    "Research & Development Cell": {
+        "Research @ Sanjay Ghodawat University": {
             url: "",
             nested_links: {
                 "Ph.D Scholar": ""
             },
             image: team1,
         },
-        "IPR Cell": {
+        "Vision, Mission & Objetives": {
             url: "http://www.sanjayghodawatuniversity.ac.in/rnd-IPR-temp",
             nested_links: {},
             image: team1,
         },
-        "Research & Publications": {
+        "Structure of Research & Development Cell": {
             url: "http://www.sanjayghodawatuniversity.ac.in/rnd-publications",
             nested_links: {},
             image: team1,
         },
-        "Center of Excellence": {
+        "Patents & Innovations Cell": {
+            url: "", // Not Found
+            nested_links: {},
+            image: team1,
+        },
+		"IPR Cell": {
             url: "", // Not Found
             nested_links: {},
             image: team1,
         },
     },
     "Campus Life": {
-        "Gallary": {
+        "Photo Gallary": {
             url: "http://www.sanjayghodawatuniversity.ac.in/photogallery-academic",
-            nested_links: {},
+            nested_links: {" Academic":"/photogallary/academic","Events":"/photogallary/evenet","Celebrations":"/photogallary/celebration","National Festivals":"/photogallary/Festivals","Social Gathering 'UMANG'":"photogallary/SocialGathering2023","Celebrities":"photogallary/Celebrities"},
             image: team1,
         },
         "Clubs and Associations": {
@@ -198,30 +312,99 @@ const menus = {
         },
 
     },
-    "Placement": {
-        "Overview": {
+	 "Contact Us": {
+        "Location Map": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/photogallery-academic",
+            nested_links: {},
+            image: team1,
+        },
+        "Vice Chancellor": {
+            url: "",
+            nested_links: {
+                "DSAC Club": "http://www.sanjayghodawatuniversity.ac.in/dsac"
+            },
+            image: team1,
+        },
+        "Registrar": {
+            url: "Sports",
+            nested_links: {},
+            image: team1,
+        },
+        "Head of School": {
+            url: "",  // Not Found
+            nested_links: {},
+            image: team1,
+        },
+        "Administrative Department": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
+            nested_links: {},
+            image: team1,
+        },
+		"Admission & Marketing Cell": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
+            nested_links: {},
+            image: team1,
+        },
+		"IT Cell": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
+            nested_links: {},
+            image: team1,
+        },
+		"Transport Department": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
+            nested_links: {},
+            image: team1,
+        },
+
+    },
+    "Training & Placement": {
+        "About Training & Placement": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-about",
             nested_links: {},
             image: team1,
         },
-        "Placement Details & Statistics": {
+        "Our Team": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-statistics",
             nested_links: {},
             image: team1,
         },
-        "Contact Us": {
+        "Vision Mission": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-contact",
             nested_links: {},
             image: team1,
         },
-        "Photo Gallary": {
+        "Our Recruiters": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
+            nested_links: {"Technology": "/trp/technology","Commerce & Management":"/trp/commerce","Science & Pharmacy":"/trp/science"},
+            image: team1,
+        },
+		"Statistics": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
             nested_links: {},
             image: team1,
         },
-    }
+		"Photo Gallery": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
+            nested_links: {},
+            image: team1,
+        },
+		"Media Coverage": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
+            nested_links: {},
+            image: team1,
+        },
+		"Aptitude & Soft Skill Syllabus": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
+            nested_links: {},
+            image: team1,
+        },
+		"Contact Us": {
+            url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
+            nested_links: {},
+            image: team1,
+        },
+    },
 }
-
 const topNavMenus = {
     "My Modal": "http://117.239.47.179:82/School/",
     "Staff Portal": "http://sguonline.in/",
