@@ -109,8 +109,16 @@ export const useComponentList = () => {
         "TableLayout": (tableHead = [], tableData = []) => {
             return <TableLayout tableHead={tableHead} tableData={tableData} />
         },
-        "FacultyProfileCard": (facultyName = "", designation = 'xxx', graduation = ['xyx', 'uuu'], specialization = ['abc', 'xxx'], image = '', experience = '', email = '', key = 1) => {
-            return <ProfileCard facultyName={facultyName} graduation={graduation} specialzation={specialization} experience={experience} email={email} key={key} />
+        "FacultyProfileCard": (facultyName = "", designation = 'xxx', graduation = [
+            "M.Tech.(TPE)",
+            "Ph.D.(Mechanical Engineering)",
+        ], specialization = [
+            "Thermal Power Engineering",
+            "Alternate fuels",
+            "Sustainable Energy",
+            "Sustainable Energy",
+        ], image = '', experience = '12 Years', email = 'khandal.sv@sanjayghodawatuniversity.ac.in', key = 1) => {
+            return <ProfileCard facultyName={facultyName} designation={designation} graduation={graduation} specialzation={specialization} experience={experience} email={email} key={key} />
         },
         "ExpandableLayouter": (expandableInnerData) => {
             return <ExpandableLayouter expandableInnerData={expandableInnerData} />
@@ -124,6 +132,8 @@ export const useComponentList = () => {
 
     const LayouterList = {
         "ColumnLayouter": (layouterDetails) => {
+            console.log("in the column layouter")
+            console.log(layouterDetails)
             return (
                 <ColumnLayouter>
                     {

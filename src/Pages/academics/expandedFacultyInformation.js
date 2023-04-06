@@ -103,23 +103,123 @@ export const expandedFacultyInformation = {
                         "componentData": [
                             {
                                 "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Profressor",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
                                 "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Profressor",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Profressor",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Profressor",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
-									{
-                                "facultyName": "Dr. S. M Doe"}
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                            },
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                            },
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                            },
                         ]
                     }
                 }
@@ -559,15 +659,87 @@ export const expandedFacultyInformation = {
                         "componentData": [
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Dean",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                    "Coal Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Professor",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Professor",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Professor",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                            },
+                            {
+                                "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Professor",
+                                "graduation": [
+                                    "M.Tech.(TPE)",
+                                    "Ph.D.(Mechanical Engineering)",
+                                ],
+                                "specialization": [
+                                    "Thermal Power Engineering",
+                                    "Alternate fuels",
+                                    "Sustainable Energy",
+                                ],
+                                "image": '',
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                         ]
                     }

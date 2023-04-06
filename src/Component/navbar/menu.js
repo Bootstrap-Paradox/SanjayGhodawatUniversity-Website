@@ -75,48 +75,48 @@ const menus = {
         "School of Computer Science": {
             url: "/faculty/computer-science",
             nested_links: {},
-				image: banner7,
-		},
+            image: banner7,
+        },
 
         "FACULTY OF TECHNOLOGY": {
             url: "/school/computer-science",
-            nested_links: {"Aerospace Engineering":"/faculty/Aerospace","Mechanical Engineering":"/faculty/Mechanical","Civil Engineering":"/faculty/Civil","Electrical and Electronics Engineering":"/faculty/EEE"},
+            nested_links: { "Aerospace Engineering": "/faculty/Aerospace", "Mechanical Engineering": "/faculty/Mechanical", "Civil Engineering": "/faculty/Civil", "Electrical and Electronics Engineering": "/faculty/EEE" },
             image: "",
         },
-		"FACULTY OF ARCHITECTURE": {
+        "FACULTY OF ARCHITECTURE": {
             url: "/school/computer-science",
-            nested_links: {"Architecture":"/faculty/Architecture","Design":"/faculty/Design"},
+            nested_links: { "Architecture": "/faculty/Architecture", "Design": "/faculty/Design" },
             image: "",
-		},
-		 "FACULTY OF COMPUTER SCIENCE AND APPLICATIONS": {
+        },
+        "FACULTY OF COMPUTER SCIENCE AND APPLICATIONS": {
             url: "/school/computer-science",
-            nested_links: {"School of Computer Science & Engineering":"/faculty/computerscience","BCA":"/faculty/BCA","MCA":"/faculty/MCA"},
+            nested_links: { "School of Computer Science & Engineering": "/faculty/computerscience", "BCA": "/faculty/BCA", "MCA": "/faculty/MCA" },
             image: "",
-		},
-		 "FACULTY OF COMMERCE AND MANAGEMENT": {
+        },
+        "FACULTY OF COMMERCE AND MANAGEMENT": {
             url: "/school/computer-science",
-            nested_links: {"School Of Commerce":"/faculty/Commerce","School of Management":"/faculty/Management"},
+            nested_links: { "School Of Commerce": "/faculty/Commerce", "School of Management": "/faculty/Management" },
             image: "",
-		},
-		 "FACULTY OF PHARMACEUTICAL & ALLIED HEALTH SCIENCES": {
+        },
+        "FACULTY OF PHARMACEUTICAL & ALLIED HEALTH SCIENCES": {
             url: "/school/computer-science",
-            nested_links: {"School of Pharmacy":"/faculty/pharmacy","School of Allied Health Sciences":"/faculty/foodscience"},
+            nested_links: { "School of Pharmacy": "/faculty/pharmacy", "School of Allied Health Sciences": "/faculty/foodscience" },
             image: "",
-		},
-		 "FACULTY OF SCIENCE": {
+        },
+        "FACULTY OF SCIENCE": {
             url: "/school/computer-science",
-            nested_links: {"School of Chemical Sciences":"/faculty/chemical","School of Physical Sciences":"/faculty/physical","School of Interdisciplinary Sciences":"/faculty/interdisciplinary","Department of Mathematics":"/faculty/mathematics"},
+            nested_links: { "School of Chemical Sciences": "/faculty/chemical", "School of Physical Sciences": "/faculty/physical", "School of Interdisciplinary Sciences": "/faculty/interdisciplinary", "Department of Mathematics": "/faculty/mathematics" },
             image: "",
-		},
-		 "FACULTY OF LIBERAL ARTS": {
+        },
+        "FACULTY OF LIBERAL ARTS": {
             url: "/school/computer-science",
-            nested_links: {"Department of Foreign language":"/faculty/foreign","Department of Humanities and Social Sciences":"/faculty/hunabities","Department of journalism and mass Communication":"/faculty/jmc"},
+            nested_links: { "Department of Foreign language": "/faculty/foreign", "Department of Humanities and Social Sciences": "/faculty/hunabities", "Department of journalism and mass Communication": "/faculty/jmc" },
             image: "",
-		},
+        },
 
 
-		},
-		
+    },
+
     "Admissions": {
         "Programs Offered & Intake": {
             url: "/admissions/overview", // programs offered and Intake
@@ -148,52 +148,52 @@ const menus = {
             nested_links: {},
             image: ""
         },
-		"Online Admission Enquiry": {
+        "Online Admission Enquiry": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Admission Fee Bank Details": {
+        "Admission Fee Bank Details": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Eligibility Criteria & Selection Process": {
+        "Eligibility Criteria & Selection Process": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Documents Required": {
+        "Documents Required": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Admission Policy": {
+        "Admission Policy": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Reservation Policy": {
+        "Reservation Policy": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"SGU Entrance Test": {
+        "SGU Entrance Test": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Contact Admission & Marketing Cell": {
+        "Contact Admission & Marketing Cell": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"Admission Cut Off 2022-2023": {
+        "Admission Cut Off 2022-2023": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
         },
-		"FAQ's": {
+        "FAQ's": {
             url: "http://www.sanjayghodawatuniversity.ac.in/scholarships",
             nested_links: {},
             image: ""
@@ -237,7 +237,7 @@ const menus = {
             nested_links: {},
             image: ""
         },
-		"Industry Collaborations": {
+        "Industry Collaborations": {
             url: "/academics/grievence-complaint-form",
             nested_links: {},
             image: ""
@@ -276,7 +276,7 @@ const menus = {
             nested_links: {},
             image: team1,
         },
-		"IPR Cell": {
+        "IPR Cell": {
             url: "", // Not Found
             nested_links: {},
             image: team1,
@@ -285,8 +285,8 @@ const menus = {
     "Campus Life": {
         "Photo Gallary": {
             url: "http://www.sanjayghodawatuniversity.ac.in/photogallery-academic",
-            nested_links: {" Academic":"/photogallary/academic","Events":"/photogallary/evenet","Celebrations":"/photogallary/celebration","National Festivals":"/photogallary/Festivals","Social Gathering 'UMANG'":"photogallary/SocialGathering2023","Celebrities":"photogallary/Celebrities"},
-            image: team1,
+            nested_links: { " Academic": "/photogallary/academic", "Events": "/photogallary/evenet", "Celebrations": "/photogallary/celebration", "National Festivals": "/photogallary/Festivals", "Social Gathering 'UMANG'": "photogallary/SocialGathering2023", "Celebrities": "photogallary/Celebrities" },
+            image: banner7,
         },
         "Clubs and Associations": {
             url: "",
@@ -312,7 +312,7 @@ const menus = {
         },
 
     },
-	 "Contact Us": {
+    "Contact Us": {
         "Location Map": {
             url: "http://www.sanjayghodawatuniversity.ac.in/photogallery-academic",
             nested_links: {},
@@ -340,17 +340,17 @@ const menus = {
             nested_links: {},
             image: team1,
         },
-		"Admission & Marketing Cell": {
+        "Admission & Marketing Cell": {
             url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
             nested_links: {},
             image: team1,
         },
-		"IT Cell": {
+        "IT Cell": {
             url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
             nested_links: {},
             image: team1,
         },
-		"Transport Department": {
+        "Transport Department": {
             url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
             nested_links: {},
             image: team1,
@@ -375,30 +375,30 @@ const menus = {
         },
         "Our Recruiters": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
-            nested_links: {"Technology": "/trp/technology","Commerce & Management":"/trp/commerce","Science & Pharmacy":"/trp/science"},
+            nested_links: { "Technology": "/trp/technology", "Commerce & Management": "/trp/commerce", "Science & Pharmacy": "/trp/science" },
             image: team1,
         },
-		"Statistics": {
+        "Statistics": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
             nested_links: {},
             image: team1,
         },
-		"Photo Gallery": {
+        "Photo Gallery": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
             nested_links: {},
             image: team1,
         },
-		"Media Coverage": {
+        "Media Coverage": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
             nested_links: {},
             image: team1,
         },
-		"Aptitude & Soft Skill Syllabus": {
+        "Aptitude & Soft Skill Syllabus": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
             nested_links: {},
             image: team1,
         },
-		"Contact Us": {
+        "Contact Us": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-photogallery",
             nested_links: {},
             image: team1,
