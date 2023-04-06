@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { SUPERCONTEXT } from '../../App';
+import { DeanDesk } from '../components';
 import { topNavMenus } from './menu';
 
 export default function TopNavMenu() {
@@ -9,7 +10,7 @@ export default function TopNavMenu() {
     return (
         <section className="top-nav-menu-x navbar-light bg-light">
             <p className="announce" onClick={() => {
-                superDispatch({ type: "TRIGGER-LAYOVER", payload: "hello" })
+                superDispatch({ type: "TRIGGER-LAYOVER", payload: <DeanDesk /> })
 
             }}>Announcements</p>
             {Object.entries(topNavMenus).map(([topMenu, topMenuLink], index) => {

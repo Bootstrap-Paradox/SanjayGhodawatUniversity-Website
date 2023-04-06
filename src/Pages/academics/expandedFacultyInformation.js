@@ -1,3 +1,7 @@
+import khandal from '../../Static/images/KS.jpg';
+import sod from '../../Static/images/sod.jpg';
+
+
 export const expandedFacultyInformation = {
     "computer-science": {
         "info": {
@@ -1193,7 +1197,7 @@ export const expandedFacultyInformation = {
                                     "Green Energy",
                                     "Coal Energy",
                                 ],
-                                "image": '',
+                                "image": khandal,
                                 "experience": '12 Years',
                                 "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
@@ -1209,7 +1213,7 @@ export const expandedFacultyInformation = {
                                     "Alternate fuels",
                                     "Sustainable Energy",
                                 ],
-                                "image": '',
+                                "image": sod,
                                 "experience": '12 Years',
                                 "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },

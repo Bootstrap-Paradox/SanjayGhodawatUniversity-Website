@@ -73,37 +73,37 @@ const menus = {
     "school": {
 
         "FACULTY OF TECHNOLOGY": {
-            url: "/faculty/computer-science/about",
+            url: "/faculty",
             nested_links: { "Aerospace Engineering": "/faculty/Aerospace/about", "Mechanical Engineering": "/faculty/Mechanical/about", "Civil Engineering": "/faculty/Civil/about", "Electrical and Electronics Engineering": "/faculty/EEE/about" },
             image: "",
         },
         "FACULTY OF ARCHITECTURE": {
-            url: "/school/computer-science",
+            url: "/faculty",
             nested_links: { "Architecture": "/faculty/Architecture/about", "Design": "/faculty/Design/about" },
             image: "",
         },
         "FACULTY OF COMPUTER SCIENCE AND APPLICATIONS": {
-            url: "/school/computer-science",
+            url: "/faculty",
             nested_links: { "School of Computer Science & Engineering": "/faculty/computerscience/about", "BCA": "/faculty/BCA/about", "MCA": "/faculty/MCA/about" },
             image: "",
         },
         "FACULTY OF COMMERCE AND MANAGEMENT": {
-            url: "/school/computer-science",
+            url: "/faculty",
             nested_links: { "School Of Commerce": "/faculty/Commerce/about", "School of Management": "/faculty/Management/about" },
             image: "",
         },
         "FACULTY OF PHARMACEUTICAL & ALLIED HEALTH SCIENCES": {
-            url: "/school/computer-science",
+            url: "/faculty",
             nested_links: { "School of Pharmacy": "/faculty/pharmacy/about", "School of Allied Health Sciences": "/faculty/foodscience/about" },
             image: "",
         },
         "FACULTY OF SCIENCE": {
-            url: "/school/computer-science",
+            url: "/faculty",
             nested_links: { "School of Chemical Sciences": "/faculty/chemical/about", "School of Physical Sciences": "/faculty/physical/about", "School of Interdisciplinary Sciences": "/faculty/interdisciplinary/about", "Department of Mathematics": "/faculty/mathematics/about" },
             image: "",
         },
         "FACULTY OF LIBERAL ARTS": {
-            url: "/school/computer-science",
+            url: "/faculty",
             nested_links: { "Department of Foreign language": "/faculty/foreign/about", "Department of Humanities and Social Sciences": "/faculty/hunabities/about", "Department of journalism and mass Communication": "/faculty/jmc/about" },
             image: "",
         },
