@@ -4,7 +4,6 @@ import { expandedFacultyInformation } from './expandedFacultyInformation';
 
 
 export default function SchoolProfile() {
-
     return (
         <PageBuilder schoolName={"Test"} pageData={expandedFacultyInformation} />
     )

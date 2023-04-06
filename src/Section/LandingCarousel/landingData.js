@@ -3,18 +3,20 @@ import banner2 from '../../Static/images/banner/banner2.jpeg';
 import banner3 from '../../Static/images/banner/banner3.jpeg';
 import banner4 from '../../Static/images/banner/banner4.jpeg';
 import banner5 from '../../Static/images/banner/banner5.jpeg';
+import banner6 from '../../Static/images/banner/banner6.jpeg';
+import banner7 from '../../Static/images/banner/banner7.JPG';
 
 const landingData = [
     {
-        title: "",
-        description: "",
-        image: banner1,
+        title: "Proud moment for Sanjay Ghodawat University",
+        description: "Indian Star Woman Cricketer and Vice Captain, Smriti Mandhana has taken admission in our University for B. Com course. It is indeed a great news for SGU!",
+        image: banner7,
         imageAlt: "",
     },
     {
         title: "",
         description: "",
-        image: banner2,
+        image: banner6,
         imageAlt: "",
     },
     {
@@ -33,6 +35,18 @@ const landingData = [
         title: "",
         description: "",
         image: banner5,
+        imageAlt: "",
+    },
+	{
+        title: "",
+        description: "",
+        image: banner1,
+        imageAlt: "",
+    },
+	{
+        title: "",
+        description: "",
+        image: banner2,
         imageAlt: "",
     },
 
