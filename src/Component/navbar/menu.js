@@ -3,6 +3,8 @@ import team1 from '../../Static/images/team1.jpg';
 import team2 from '../../Static/images/team2.jpg';
 import team3 from '../../Static/images/team3.jpg';
 import banner7 from '../../Static/images/banner/banner7.JPG';
+import pepsChat from '../../Static/images/people_chatting.jpg';
+import mange from '../../Static/images/management.jpg';
 
 
 
@@ -70,12 +72,12 @@ const menus = {
             image: ""
         }
     },
-    "school": {
+    "School": {
 
         "FACULTY OF TECHNOLOGY": {
             url: "/faculty",
             nested_links: { "Aerospace Engineering": "/faculty/Aerospace/about", "Mechanical Engineering": "/faculty/Mechanical/about", "Civil Engineering": "/faculty/Civil/about", "Electrical and Electronics Engineering": "/faculty/EEE/about" },
-            image: "",
+            image: pepsChat,
         },
         "FACULTY OF ARCHITECTURE": {
             url: "/faculty",
@@ -90,7 +92,7 @@ const menus = {
         "FACULTY OF COMMERCE AND MANAGEMENT": {
             url: "/faculty",
             nested_links: { "School Of Commerce": "/faculty/Commerce/about", "School of Management": "/faculty/Management/about" },
-            image: "",
+            image: mange,
         },
         "FACULTY OF PHARMACEUTICAL & ALLIED HEALTH SCIENCES": {
             url: "/faculty",
