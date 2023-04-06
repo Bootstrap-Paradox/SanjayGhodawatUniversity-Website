@@ -8,7 +8,7 @@ import TableLayout from '../Component/tableLayout/tableLayout';
 import ColumnLayouter from '../Component/columnLayouter/columnLayouter';
 import ExpandableLayouter from '../Component/expandable/expandable';
 
-export default function PageBuilder({ pageLocation = "tryout", schoolName = "", pageData = {} }) {
+export default function PageBuilder({ pageLocation = "school", schoolName = "", pageData = {} }) {
     // Page builder Creates Pages based on Json Data
 
     return (
@@ -23,7 +23,7 @@ export default function PageBuilder({ pageLocation = "tryout", schoolName = "", 
                     const navigationInformationBuilder = {};
                     Object.keys(pageData[schoolName]).map(
                         (page, index) => {
-                            navigationInformationBuilder[page] = `/school/${schoolName}/${page}`
+                            navigationInformationBuilder[page] = `/${pageLocation}/${schoolName}/${page}`
                         }
                     )
 
@@ -109,8 +109,8 @@ export const useComponentList = () => {
         "TableLayout": (tableHead = [], tableData = []) => {
             return <TableLayout tableHead={tableHead} tableData={tableData} />
         },
-        "FacultyProfileCard": (facultyName = "", key = 1) => {
-            return <ProfileCard facultyName={facultyName} key={key} />
+        "FacultyProfileCard": (facultyName = "", designation = 'xxx', graduation = ['xyx', 'uuu'], specialization = ['abc', 'xxx'], image = '', experience = '', email = '', key = 1) => {
+            return <ProfileCard facultyName={facultyName} graduation={graduation} specialzation={specialization} experience={experience} email={email} key={key} />
         },
         "ExpandableLayouter": (expandableInnerData) => {
             return <ExpandableLayouter expandableInnerData={expandableInnerData} />

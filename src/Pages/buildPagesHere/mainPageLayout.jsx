@@ -7,7 +7,7 @@ export default function MainPageLayout() {
     return (
         <Routes>
             <Route path="/faculty/*" element={
-                <PageBuilder pageData={expandedFacultyInformation} />
+                <PageBuilder pageLocation="faculty" pageData={expandedFacultyInformation} />
             } />
         </Routes>
     )

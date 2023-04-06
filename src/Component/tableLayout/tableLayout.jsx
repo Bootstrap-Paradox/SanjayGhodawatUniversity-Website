@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TableLayout({ tableHead, tableData }) {
     return (
-        <table class="table table-striped table-bordered">
+        <table className="table table-striped table-bordered">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -22,7 +22,7 @@ export default function TableLayout({ tableHead, tableData }) {
                                     <th scope="row" >{index + 1}</th>
                                     {
                                         tableRow.map(
-                                            (rowValue, index) => index === 0 ? <td colSpan={2} >{rowValue}</td> : <td>{rowValue}</td>
+                                            (rowValue, index) => index === 0 ? <td key={index} colSpan={2} >{rowValue}</td> : <td key={index} >{rowValue}</td>
                                         )
                                     }
                                 </tr>

@@ -71,29 +71,37 @@ export function DeanDesk() {
     )
 }
 
-export function ProfileCard({ facultyName = "Dr. V. S Khandal", }) {
-
-
-
-    const specialzation = [
+export function ProfileCard({
+    facultyName = "Dr. V. S Khandal",
+    designation = "Associate Professor",
+    graduation = [
+        "M.Tech.(TPE)",
+        "Ph.D.(Mechanical Engineering)",
+    ],
+    specialzation = [
         "Thermal Power Engineering",
         "Alternate fuels",
         "Sustainable Energy",
         "Sustainable Energy",
-    ]
+    ],
+    image = khandal,
+    experience = "12 Years",
+    email = "khandal.sv@sanjayghodawatuniversity.ac.in",
+}) {
 
     return (
         <div className='faculty-profile' data-bs-toggle="tooltip" data-bs-placement="left" title="Click to Expand" >
             <div className='faculty-profile-sgu-logo'>
-                <img src={sgulogo} />
+                <img src={sgulogo} alt='' />
             </div>
             <div className='faculty-profile-image'>
-                <img src={khandal} />
+                <img src={image} alt="" />
             </div>
             <div className='faculty-profile-content'>
                 <h3>{facultyName}</h3>
-                <p className="data">Associate Professor</p>
-                <p>M.Tech.(TPE), Ph.D.(Mechanical Engineering)</p>
+                <p className="data">{designation}</p>
+                <p>{graduation.join(', ')}</p>
+                {/* <p>M.Tech.(TPE), Ph.D.(Mechanical Engineering)</p> */}
 
                 <div className="specialization-area">
                     <h3>Area of Specialization</h3>
@@ -105,12 +113,12 @@ export function ProfileCard({ facultyName = "Dr. V. S Khandal", }) {
                 </div>
                 <div className="experience">
                     <p>Experience</p>
-                    <p>12 Years</p>
+                    <p>{experience}</p>
                 </div>
             </div>
 
             <div className='faculty-profile-email'>
-                <p>khandal.sv@sanjayghodawatuniversity.ac.in</p>
+                <p>{email}</p>
             </div>
         </div>
     )

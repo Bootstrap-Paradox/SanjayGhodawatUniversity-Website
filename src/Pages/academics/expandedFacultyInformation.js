@@ -103,15 +103,20 @@ export const expandedFacultyInformation = {
                         "componentData": [
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Profressor",
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Profressor",
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Profressor",
                             },
                             {
                                 "facultyName": "Dr. V. S. Khandal",
+                                "designation": "Associate Profressor",
                             },
                         ]
                     }
