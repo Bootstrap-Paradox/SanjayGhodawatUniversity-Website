@@ -8,6 +8,8 @@ import TableLayout from '../Component/tableLayout/tableLayout';
 import ColumnLayouter from '../Component/columnLayouter/columnLayouter';
 import ExpandableLayouter from '../Component/expandable/expandable';
 
+import Sgulogo from '../Static/images/SGU Logo.png';
+
 export default function PageBuilder({ pageLocation = "school", schoolName = "", pageData = {} }) {
     // Page builder Creates Pages based on Json Data
 
@@ -117,8 +119,8 @@ export const useComponentList = () => {
             "Alternate fuels",
             "Sustainable Energy",
             "Sustainable Energy",
-        ], image = '', experience = '12 Years', email = 'khandal.sv@sanjayghodawatuniversity.ac.in', key = 1) => {
-            return <ProfileCard facultyName={facultyName} designation={designation} graduation={graduation} specialzation={specialization} experience={experience} email={email} key={key} />
+        ], image = Sgulogo, experience = '12 Years', email = 'khandal.sv@sanjayghodawatuniversity.ac.in', key = 1) => {
+            return <ProfileCard facultyName={facultyName} designation={designation} graduation={graduation} specialzation={specialization} image={image === '' ? Sgulogo : image} experience={experience} email={email} key={key} />
         },
         "ExpandableLayouter": (expandableInnerData) => {
             return <ExpandableLayouter expandableInnerData={expandableInnerData} />

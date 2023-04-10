@@ -405,6 +405,10 @@
 }
 
 .apply-now {
+    @media (max-width: 700px) {
+        // display: none;
+    }
+
     background-color: #e0211a;
     font-size: 1.1rem;
     font-weight: bold;

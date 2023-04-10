@@ -1,6 +1,29 @@
 @import './ExperienceEducation/experienceEducation';
 
 
+.home-page {
+    position: relative;
+
+    .apply-now-button {
+        @media (min-width: 700px) {
+            display: none;
+        }
+
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        // left: 0;
+        right: 0;
+        z-index: 2;
+        padding: 1rem;
+
+        &>* {
+            margin: auto;
+            width: 100%;
+        }
+    }
+}
+
 .section {
     $horizontal-padding: auto;
 

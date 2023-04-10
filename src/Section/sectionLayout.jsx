@@ -3,6 +3,7 @@ import React from 'react';
 import background from '../Static/images/1.jpg';
 
 import pepschat from '../Static/images/people_chatting.jpg';
+import sod from '../Static/images/sod.jpg';
 
 export function SectionLayout(props) {
     return (
@@ -87,7 +88,7 @@ export function PromotionalPageLayout(props) {
                     }} className='promotional-block'>
                         {props.hidePromotions ||
                             <div className='promotional-block-box'>
-                                <img src={pepschat} />
+                                <img src={pepschat} alt='' />
                                 <span>Promotion</span>
                             </div>
                         }
@@ -104,6 +105,7 @@ export function PromotionalPageLayout(props) {
                         {props.hidePromotions ||
 
                             <div className='promotional-block-box'>
+                                <img src={sod} alt='' />
                                 <span>Promotion</span>
                             </div>
                         }

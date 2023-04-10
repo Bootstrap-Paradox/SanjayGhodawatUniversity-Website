@@ -9,6 +9,7 @@ import menus from './menu';
 import NavigationMenu, { MobileNavigationMenu } from './navbarLogic';
 import { NavigationReducer } from './navbarReducer';
 import { useNavigate } from 'react-router-dom';
+import useWindowDimensions from '../../Logic/useWindowDimensions';
 
 export const NavigationContext = createContext();
 
@@ -28,6 +29,7 @@ export default function NavBar() {
     const [navState, navDispatch] = useReducer(NavigationReducer, initialState);
 
     const [toggleMobileNavigationOpen, setToggleMobileNavigationOpen] = useState(false);
+    const { width, height } = useWindowDimensions()
 
     return (
         <NavigationContext.Provider value={{ navState, navDispatch }}>
@@ -39,7 +41,11 @@ export default function NavBar() {
                 <div className="container-fluid navbar navbar-custom navbar-light bg-light">
                     <Brand />
                     <Menu />
-                    <ApplyNowButton />
+
+                    {
+                        width >= 700 &&
+                        <ApplyNowButton />
+                    }
                     {/* <ContactCTA /> */}
                     <HamburgerIcon toggleMobileNavigationOpen={toggleMobileNavigationOpen} setToggleMobileNavigationOpen={setToggleMobileNavigationOpen} />
                     <div></div>
@@ -97,10 +103,10 @@ const ContactCTA = () => {
     )
 }
 
-const ApplyNowButton = () => {
-	const navigate = useNavigate();
+export const ApplyNowButton = () => {
+    const navigate = useNavigate();
     return (
-        <button onClick={() => {window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCAn-0oM-o3d1Ug1xmF1pI6fIxJq_pnB513xJiHUAZMIyxww/viewform?vc=0&c=0&w=1&flr=0')}} className='custom-btn apply-now'>Apply Now</button>
+        <button onClick={() => { window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCAn-0oM-o3d1Ug1xmF1pI6fIxJq_pnB513xJiHUAZMIyxww/viewform?vc=0&c=0&w=1&flr=0') }} className='custom-btn apply-now'>Apply Now</button>
     )
 }
 

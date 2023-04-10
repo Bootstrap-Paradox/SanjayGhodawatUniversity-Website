@@ -18,6 +18,7 @@ import '../Static/css/Styles.css'
 import ExperienceEducation from '../Section/ExperienceEducation/experienceEducation';
 import { SectionLayout } from '../Section/sectionLayout';
 import NewsAndEvents from '../Section/NewsAndEvents/newsAndEvents';
+import { ApplyNowButton } from '../Component/navbar/navbar';
 
 
 
@@ -28,7 +29,7 @@ export default function Home() {
     return (
         <>
 
-            <section style={{
+            <section className='home-page' style={{
                 overflow: "hidden"
             }}>
 
@@ -37,9 +38,12 @@ export default function Home() {
 				<WhySgu />
                 <ExperienceEducation />
                 <Highlights />
-                {/* <YoutubeVideos /> */}
+                <YoutubeVideos />
                 <OurRecruiters />
                 <Leadership />
+                <div className='apply-now-button' >
+                    <ApplyNowButton />
+                </div>
             </section>
         </>
     )

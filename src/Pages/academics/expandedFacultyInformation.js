@@ -1,3 +1,14 @@
+import khandal from '../../Static/images/KS.jpg';
+import sod from '../../Static/images/KS.jpg';
+import A7254 from '../../Static/images/aeronautical/7254.jpg';
+import A7290 from '../../Static/images/aeronautical/7290.jpg';
+import A7292 from '../../Static/images/aeronautical/7292.jpg';
+import balaji from '../../Static/images/aeronautical/7294.jpg';
+import A7309 from '../../Static/images/aeronautical/7306.jpg';
+import A7307 from '../../Static/images/aeronautical/7307.jpg';
+import A9172 from '../../Static/images/aeronautical/9172.jpg';
+
+
 export const expandedFacultyInformation = {
     "computer-science": {
         "info": {
@@ -669,7 +680,7 @@ export const expandedFacultyInformation = {
                                     "Propulsion,",
                                     "Boundary Layer control over an aircraft Wing, Flutter Analysis",
                                 ],
-                                "image": '',
+                                "image": balaji,
                                 "experience": '8 Years',
                                 "email": "balaji.k@sanjayghodawatuniversity.ac.in"
                             },
@@ -684,7 +695,7 @@ export const expandedFacultyInformation = {
                                     "Aircraft Structural Engineering.",
                                     "Aircraft Propulsion, Strength of Materials",
                                 ],
-                                "image": '',
+                                "image": '7307',
                                 "experience": '6 Years',
                                 "email": "babu.v@sanjayghodawatuniversity.ac.in"
                             },
@@ -699,7 +710,7 @@ export const expandedFacultyInformation = {
                                     "Aircraft Structural Engineering.",
                                     "Aircraft Propulsion, Strength of Materials",
                                 ],
-                                "image": '',
+                                "image": '7292',
                                 "experience": '8 Years',
                                 "email": "s.sulthan@sanjayghodawatuniversity.ac.in"
                             },
@@ -714,7 +725,7 @@ export const expandedFacultyInformation = {
                                     "Machine Design,",
                                     "Vibration analysis",
                                 ],
-                                "image": '',
+                                "image": '7254',
                                 "experience": '15 Years',
                                 "email": "pravin.sawant@sanjayghodawatuniversity.ac.in"
                             },
@@ -730,7 +741,7 @@ export const expandedFacultyInformation = {
                                     "Automation and Robotics",
                                     "ICT, Fluid Mechanics",
                                 ],
-                                "image": '',
+                                "image": '7306',
                                 "experience": '11 Years',
                                 "email": "nilesh.sabnis@sanjayghodawatuniversity.ac.in"
                             },
@@ -744,7 +755,7 @@ export const expandedFacultyInformation = {
                                 "specialization": [
                                     "Metallurgy",
                                 ],
-                                "image": '',
+                                "image": '7290',
                                 "experience": '10 Years',
                                 "email": "hemant.shinde@sanjayghodawatuniversity.ac.in"
                             },
@@ -759,7 +770,7 @@ export const expandedFacultyInformation = {
                                     "Aerodynamics,",
                                     "Flight Mechanics,CFD,",
                                 ],
-                                "image": '',
+                                "image": '9172',
                                 "experience": '06 Years',
                                 "email": "akhil.ck@sanjayghodawatuniversity.ac.in"
                             },
@@ -867,10 +878,14 @@ export const expandedFacultyInformation = {
                     "ExpandableLayouter": {
                         expandableData: [
                             {
-                                "Parents Meet": [
-                                    "Parents meet organized on 11th August 2018 for Odd semester.",
-                                    "Parents meet organized on 22nd January 2019 for Even semester.",
+                                "International Conference Attended ": [
+                                    "S.V.Khandal, Balaji.K, V.V.Kulkarni, N.S.Desai, Aishwarya Mukund Katkar, Shubham Rajaram Mali on International conference on advance in power generation from renewable energy Sources, Banswara(Rajasthan) on 11th 12th February 2019. Title of Article - Effect of preheating the cotton seed Biodiesel on the performance of diesel engine.",
+                                ],
+								"National Conference Attended ": [
+                                    "Sangamsinh Jadhav, Ruturaj Patil, S.V. Khandal, T. B. Shinde, N.V. Sabnis, N.S. Desai National Conference on Innovative Trends in Engineering and Technology, Solapur on 15th -16th March 2019. Title of Article - Performance of Biodiesel Powered Diesel Engine with Different Injection Strategies",
+                                    "Vaishnavi Shivkumar Hirekodi, Jyoti Mahantesh Mangasuli, S.V. Khandal, Balaji. K National Conference on Innovative Trends in Engineering and Technology, Solapur on 15th -16th March 2019. Title of Article - Effect of Fuel Injection Timing, Injection Pressure and Combustion Chamber Shapes on the Performance of Diesel Engine Run on Biodiesel",
                                 ]
+								
                             }
                         ]
                     }
@@ -1212,9 +1227,12 @@ export const expandedFacultyInformation = {
                                 "specialization": [
                                     "Thermal Power Engg",
                                 ],
+
                                 "image": '',
                                 "experience": '30 Years',
                                 "email": "khandal.sanjeevakumar@sanjayghodawatuniversity.ac.in"
+                               
+
                             },
                             {
                                 "facultyName": "Mr. Ingale Sanjaykumar Mahadeo",
@@ -1227,9 +1245,13 @@ export const expandedFacultyInformation = {
                                 "specialization": [
                                     "Production and Quality Management",
                                 ],
-                                "image": '',
-                                "experience": '21 Years',
-                                "email": "sanjaykumar.ingale@sanjayghodawatuniversity.ac.in"
+
+                               
+
+                                "image": sod,
+                                "experience": '12 Years',
+                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+
                             },
                             {
                                 "facultyName": "Mr. Pujari Nitin Vishvanath",
@@ -3922,16 +3944,110 @@ export const expandedFacultyInformation = {
                         "component": "FacultyProfileCard",
                         "componentData": [
                             {
-                                "facultyName": "Dr. V. S. Khandal",
+                                "facultyName": "Dr. Balaji K.",
+                                "designation": "HOD & Assistant Professor",
+                                "graduation": [
+                                    "M.E.",
+                                    "Ph.D- Aerospace Engineering",
+                                ],
+                                "specialization": [
+                                    "Aircraft Maintenance,",
+                                    "Propulsion,",
+                                    "Boundary Layer control over an aircraft Wing, Flutter Analysis",
+                                ],
+                                "image": '',
+                                "experience": '8 Years',
+                                "email": "balaji.k@sanjayghodawatuniversity.ac.in"
                             },
                             {
-                                "facultyName": "Dr. V. S. Khandal",
+                                "facultyName": "Mr. Babu V.",
+                                "designation": "Associate Professor",
+                                "graduation": [
+                                    "M.E. (Anna University, Chennai, Tamil Nadu)",
+                                   
+                                ],
+                                "specialization": [
+                                    "Aircraft Structural Engineering.",
+                                    "Aircraft Propulsion, Strength of Materials",
+                                ],
+                                "image": '',
+                                "experience": '6 Years',
+                                "email": "babu.v@sanjayghodawatuniversity.ac.in"
                             },
-                            {
-                                "facultyName": "Dr. V. S. Khandal",
+							{
+                                "facultyName": "Mr.S.Sulthan",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.E. (Anna University, Chennai, Tamil Nadu)",
+                                   
+                                ],
+                                "specialization": [
+                                    "Aircraft Structural Engineering.",
+                                    "Aircraft Propulsion, Strength of Materials",
+                                ],
+                                "image": '',
+                                "experience": '8 Years',
+                                "email": "s.sulthan@sanjayghodawatuniversity.ac.in"
                             },
-                            {
-                                "facultyName": "Dr. V. S. Khandal",
+							{
+                                "facultyName": "Mr. Sawant Pravin Jagannath",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.E. Mechanical-Design Engineering",
+                                   
+                                ],
+                                "specialization": [
+                                    "Machine Design,",
+                                    "Vibration analysis",
+                                ],
+                                "image": '',
+                                "experience": '15 Years',
+                                "email": "pravin.sawant@sanjayghodawatuniversity.ac.in"
+                            },
+							{
+                                "facultyName": "Mr. Sabnis Nilesh Vijay",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.S. - Technical University",
+                                    "Dortmund, Germany., Ph.D (Pursuing)",
+                                   
+                                ],
+                                "specialization": [
+                                    "Automation and Robotics",
+                                    "ICT, Fluid Mechanics",
+                                ],
+                                "image": '',
+                                "experience": '11 Years',
+                                "email": "nilesh.sabnis@sanjayghodawatuniversity.ac.in"
+                            },
+							{
+                                "facultyName": "Mr. Shinde Hemant T.",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.Tech. Metallurgy",
+                                   
+                                ],
+                                "specialization": [
+                                    "Metallurgy",
+                                ],
+                                "image": '',
+                                "experience": '10 Years',
+                                "email": "hemant.shinde@sanjayghodawatuniversity.ac.in"
+                            },
+							{
+                                "facultyName": "Mr. Akhil C.K",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.Tech. Aeronautical Engineering",
+                                   
+                                ],
+                                "specialization": [
+                                    "Aerodynamics,",
+                                    "Flight Mechanics,CFD,",
+                                ],
+                                "image": '',
+                                "experience": '06 Years',
+                                "email": "akhil.ck@sanjayghodawatuniversity.ac.in"
                             },
                         ]
                     }
