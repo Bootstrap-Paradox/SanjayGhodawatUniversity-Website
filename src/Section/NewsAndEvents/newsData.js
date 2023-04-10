@@ -17,6 +17,34 @@ const newsData = [
         url: "",
         date: "21 November 2021",
     },
+			 {
+        title: `TWO DAYS NATIONAL LEVEL "ENTREPRENEURSHIP DEVELOPMENT PROGRAM"`,
+        description: 'Two Days National Level "Entrepreneurship Development Program" on 30th and 31st January 2020. Organised by School of Commerce and Management and IED Cell in Association with Skill Development and Entrepreneourship Cell. For the true measure of giving, is giving without measure" is the philosophy of this Trust. Spread across 165 acres, SGU is situated in serene atmosphere amidst idyllic hills and lush green meadows to study in harmony with nature',
+        image: mba_event,
+        url: "",
+        date: "21 November 2021",
+    },
+ {
+        title: `TWO DAYS NATIONAL LEVEL "ENTREPRENEURSHIP DEVELOPMENT PROGRAM"`,
+        description: 'Two Days National Level "Entrepreneurship Development Program" on 30th and 31st January 2020. Organised by School of Commerce and Management and IED Cell in Association with Skill Development and Entrepreneourship Cell. For the true measure of giving, is giving without measure" is the philosophy of this Trust. Spread across 165 acres, SGU is situated in serene atmosphere amidst idyllic hills and lush green meadows to study in harmony with nature',
+        image: mba_event,
+        url: "",
+        date: "21 November 2021",
+    },
+ {
+        title: `TWO DAYS NATIONAL LEVEL "ENTREPRENEURSHIP DEVELOPMENT PROGRAM"`,
+        description: 'Two Days National Level "Entrepreneurship Development Program" on 30th and 31st January 2020. Organised by School of Commerce and Management and IED Cell in Association with Skill Development and Entrepreneourship Cell. For the true measure of giving, is giving without measure" is the philosophy of this Trust. Spread across 165 acres, SGU is situated in serene atmosphere amidst idyllic hills and lush green meadows to study in harmony with nature',
+        image: mba_event,
+        url: "",
+        date: "21 November 2021",
+    },
+ {
+        title: `TWO DAYS NATIONAL LEVEL "ENTREPRENEURSHIP DEVELOPMENT PROGRAM"`,
+        description: 'Two Days National Level "Entrepreneurship Development Program" on 30th and 31st January 2020. Organised by School of Commerce and Management and IED Cell in Association with Skill Development and Entrepreneourship Cell. For the true measure of giving, is giving without measure" is the philosophy of this Trust. Spread across 165 acres, SGU is situated in serene atmosphere amidst idyllic hills and lush green meadows to study in harmony with nature',
+        image: mba_event,
+        url: "",
+        date: "21 November 2021",
+    },
 ]
 
 export default newsData;

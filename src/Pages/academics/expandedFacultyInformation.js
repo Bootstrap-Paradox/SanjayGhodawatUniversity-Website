@@ -658,89 +658,112 @@ export const expandedFacultyInformation = {
                         "component": "FacultyProfileCard",
                         "componentData": [
                             {
-                                "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Dean",
+                                "facultyName": "Dr. Balaji K.",
+                                "designation": "HOD & Assistant Professor",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.E.",
+                                    "Ph.D- Aerospace Engineering",
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
-                                    "Sustainable Energy",
-                                    "Coal Energy",
+                                    "Aircraft Maintenance,",
+                                    "Propulsion,",
+                                    "Boundary Layer control over an aircraft Wing, Flutter Analysis",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '8 Years',
+                                "email": "balaji.k@sanjayghodawatuniversity.ac.in"
                             },
                             {
-                                "facultyName": "Dr. V. S. Khandal",
+                                "facultyName": "Mr. Babu V.",
                                 "designation": "Associate Professor",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.E. (Anna University, Chennai, Tamil Nadu)",
+                                   
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
-                                    "Sustainable Energy",
+                                    "Aircraft Structural Engineering.",
+                                    "Aircraft Propulsion, Strength of Materials",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '6 Years',
+                                "email": "babu.v@sanjayghodawatuniversity.ac.in"
                             },
-                            {
-                                "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Professor",
+							{
+                                "facultyName": "Mr.S.Sulthan",
+                                "designation": "Assistant Professor",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.E. (Anna University, Chennai, Tamil Nadu)",
+                                   
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
-                                    "Sustainable Energy",
+                                    "Aircraft Structural Engineering.",
+                                    "Aircraft Propulsion, Strength of Materials",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '8 Years',
+                                "email": "s.sulthan@sanjayghodawatuniversity.ac.in"
                             },
-                            {
-                                "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Professor",
+							{
+                                "facultyName": "Mr. Sawant Pravin Jagannath",
+                                "designation": "Assistant Professor",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.E. Mechanical-Design Engineering",
+                                   
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
+                                    "Machine Design,",
+                                    "Vibration analysis",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '15 Years',
+                                "email": "pravin.sawant@sanjayghodawatuniversity.ac.in"
                             },
-                            {
-                                "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Professor",
+							{
+                                "facultyName": "Mr. Sabnis Nilesh Vijay",
+                                "designation": "Assistant Professor",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.S. - Technical University",
+                                    "Dortmund, Germany., Ph.D (Pursuing)",
+                                   
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
+                                    "Automation and Robotics",
+                                    "ICT, Fluid Mechanics",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '11 Years',
+                                "email": "nilesh.sabnis@sanjayghodawatuniversity.ac.in"
                             },
+							{
+                                "facultyName": "Mr. Shinde Hemant T.",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.Tech. Metallurgy",
+                                   
+                                ],
+                                "specialization": [
+                                    "Metallurgy",
+                                ],
+                                "image": '',
+                                "experience": '10 Years',
+                                "email": "hemant.shinde@sanjayghodawatuniversity.ac.in"
+                            },
+							{
+                                "facultyName": "Mr. Akhil C.K",
+                                "designation": "Assistant Professor",
+                                "graduation": [
+                                    "M.Tech. Aeronautical Engineering",
+                                   
+                                ],
+                                "specialization": [
+                                    "Aerodynamics,",
+                                    "Flight Mechanics,CFD,",
+                                ],
+                                "image": '',
+                                "experience": '06 Years',
+                                "email": "akhil.ck@sanjayghodawatuniversity.ac.in"
+                            },
+                            
                         ]
                     }
                 }
@@ -1179,54 +1202,47 @@ export const expandedFacultyInformation = {
                         "component": "FacultyProfileCard",
                         "componentData": [
                             {
-                                "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Dean",
+                                "facultyName": "Dr. Sanjeevakumar Virsangappa Khandal",
+                                "designation": "Professor",
                                 "graduation": [
-                                    "B.Tech.(TPE)",
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "Ph.D Mech.Engg.Sci.",
+                                    "M.Tech-Thermal Power Engg.",
+                                    "B.E. Mech",
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
-                                    "Green Energy",
-                                    "Coal Energy",
+                                    "Thermal Power Engg",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '30 Years',
+                                "email": "khandal.sanjeevakumar@sanjayghodawatuniversity.ac.in"
                             },
                             {
-                                "facultyName": "Dr. V. S. Khandal",
-                                "designation": "Associate Professor",
+                                "facultyName": "Mr. Ingale Sanjaykumar Mahadeo",
+                                "designation": "Associate Dean Academics & Associate Professor ",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.E. - Mechanical - Production Engineering",
+                                    "MBA",
+									"Ph.D (Pursuing)",
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
+                                    "Production and Quality Management",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
-                                "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
+                                "experience": '21 Years',
+                                "email": "sanjaykumar.ingale@sanjayghodawatuniversity.ac.in"
                             },
                             {
-                                "facultyName": "Dr. V. S. Khandal",
+                                "facultyName": "Mr. Pujari Nitin Vishvanath",
                                 "designation": "Associate Professor",
                                 "graduation": [
-                                    "M.Tech.(TPE)",
-                                    "Ph.D.(Mechanical Engineering)",
+                                    "M.E. - Mechanical(Production Engineering)",
                                 ],
                                 "specialization": [
-                                    "Thermal Power Engineering",
-                                    "Alternate fuels",
-                                    "Sustainable Energy",
+                                    "Manufacturing",
+                                    "CAD/CAM",
                                 ],
                                 "image": '',
-                                "experience": '12 Years',
+                                "experience": 'Academic 26 Years',
                                 "email": "khandal.sv@sanjayghodawatuniversity.ac.in"
                             },
                         ]

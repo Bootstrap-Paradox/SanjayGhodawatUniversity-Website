@@ -33,9 +33,9 @@ export default function Home() {
             }}>
 
                 <LandingCarousel />
-                <WhySgu />
-                <ExperienceEducation />
                 <NewsAndEvents />
+				<WhySgu />
+                <ExperienceEducation />
                 <Highlights />
                 {/* <YoutubeVideos /> */}
                 <OurRecruiters />

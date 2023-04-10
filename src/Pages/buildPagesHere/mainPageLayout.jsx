@@ -2,8 +2,10 @@ import PageBuilder from "../../PageBuilder/pageBuilder";
 import { Routes, Route } from 'react-router-dom';
 import { expandedFacultyInformation } from "../academics/expandedFacultyInformation";
 import Faculty from "../academics/schools";
+import { fees } from "./fess"
 
 export default function MainPageLayout() {
+console.log(fees)
     return (
         <Routes>
             <Route path="/faculty" element={
@@ -11,6 +13,9 @@ export default function MainPageLayout() {
             } />
             <Route path="/faculty/*" element={
                 <PageBuilder pageLocation="faculty" pageData={expandedFacultyInformation} />
+            } />
+	    <Route path="/fees/*" element={
+                <PageBuilder pageLocation="fees" pageData={fees} />
             } />
         </Routes>
     )
