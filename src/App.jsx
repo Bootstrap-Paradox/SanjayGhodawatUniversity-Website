@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      superDispatch({ type: "TRIGGER-LAYOVER", payload: <img src={sod} alt='' /> })
+      // superDispatch({ type: "TRIGGER-LAYOVER", payload: <img src={sod} alt='' /> })
 
     }, 2000);
 

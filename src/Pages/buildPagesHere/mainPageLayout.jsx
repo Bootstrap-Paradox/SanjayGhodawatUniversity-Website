@@ -5,7 +5,7 @@ import Faculty from "../academics/schools";
 import { fees } from "./fess"
 
 export default function MainPageLayout() {
-console.log(fees)
+    console.log(fees)
     return (
         <Routes>
             <Route path="/faculty" element={
@@ -14,7 +14,7 @@ console.log(fees)
             <Route path="/faculty/*" element={
                 <PageBuilder pageLocation="faculty" pageData={expandedFacultyInformation} />
             } />
-	    <Route path="/fees/*" element={
+            <Route path="/fees/*" element={
                 <PageBuilder pageLocation="fees" pageData={fees} />
             } />
         </Routes>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { SubPageLayout } from '../Component/subSection/subSection';
-import { expandedFacultyInformation } from '../Pages/academics/expandedFacultyInformation';
 import AboutBlock from '../Component/aboutBlock/aboutBlock';
 import { DeanDesk, DisplayImage, InfoBlock, ProfileCard } from '../Component/components';
 import TableLayout from '../Component/tableLayout/tableLayout';
@@ -10,35 +9,30 @@ import ExpandableLayouter from '../Component/expandable/expandable';
 
 import Sgulogo from '../Static/images/SGU Logo.png';
 
-export default function PageBuilder({ pageLocation = "school", schoolName = "", pageData = {} }) {
-    // Page builder Creates Pages based on Json Data
-
+export default function PageBuilder({ pageLocation = "", pageData = {} }) {
     return (
         <Routes>
-            {Object.keys(expandedFacultyInformation).map(
-
-                (schoolName, index) => {
-                    const displaySchoolName = schoolName.split("-").map(
-                        (keyword) => keyword.charAt(0).toUpperCase() + keyword.slice(1)
-                    ).join(" ")
+            {
+                Object.keys(pageData).map((pageName, index) => {
+                    const displayName = pageName.split('-').map((keyword) => keyword.charAt(0).toUpperCase() + keyword.slice(1)).join(' ')
+                    console.log(pageName)
 
                     const navigationInformationBuilder = {};
-                    Object.keys(pageData[schoolName]).map(
-                        (page, index) => {
-                            navigationInformationBuilder[page] = `/${pageLocation}/${schoolName}/${page}`
-                        }
-                    )
+                    Object.keys(pageData[pageName]).map((page, index) => {
+                        navigationInformationBuilder[page] = `/${pageLocation}/${pageName}/${page}`
+                    })
+                    console.log(navigationInformationBuilder)
 
-                    return <Route path={`/${schoolName}/*`} element={
-                        <SubPageLayouter displaySchoolName={displaySchoolName} pageData={pageData[schoolName]} navigationInformation={navigationInformationBuilder} />
-                    } key={index} />
-                }
-            )}
+                    return <Route path={`/${pageName}/*`} element={
+                        <SubPageLayouter displayName={displayName} pageData={pageData[pageName]} navigationInformation={navigationInformationBuilder} />
+                    } key={pageName} />
+                })
+            }
         </Routes>
     )
 }
 
-const SubPageLayouter = ({ displaySchoolName, navigationInformation, pageData }) => {
+const SubPageLayouter = ({ displayName, navigationInformation, pageData }) => {
 
     const [ComponentList, LayouterList] = useComponentList();
 
@@ -48,7 +42,7 @@ const SubPageLayouter = ({ displaySchoolName, navigationInformation, pageData })
                 Object.keys(navigationInformation).map(
                     (subPageName, index) => {
                         return <Route path={`/${subPageName}`} element={
-                            <SubPageLayout Title="Explore" subTitle={displaySchoolName} hidePromotions={true} navigationInformation={navigationInformation} >
+                            <SubPageLayout Title="Explore" subTitle={displayName} hidePromotions={true} navigationInformation={navigationInformation} >
                                 {
                                     pageData[subPageName]["builder"].length === 0 ?
                                         <div>
