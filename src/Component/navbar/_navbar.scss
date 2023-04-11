@@ -265,6 +265,9 @@
     .navigation-menu {
         user-select: none;
 
+        max-height: 600px;
+        // overflow-y: scroll;
+
         @media (max-width: 1012px) {
             display: none;
 
@@ -297,6 +300,7 @@
 
         .sub-menu {
             padding-top: 50px;
+            overflow-y: auto;
 
             padding-left: 50px;
 

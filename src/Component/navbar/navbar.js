@@ -35,7 +35,7 @@ export default function NavBar() {
         <NavigationContext.Provider value={{ navState, navDispatch }}>
 
             <nav onMouseLeave={() => {
-                navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
+                // navDispatch({ type: "CLOSE-NAVIGATION-MENU" })
             }} className="navigation fixed-top">
                 <TopNavMenu />
                 <div className="container-fluid navbar navbar-custom navbar-light bg-light">

@@ -308,51 +308,6 @@ const menus = {
         },
 
     },
-    "Contact Us": {
-        "Location Map": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/photogallery-academic",
-            nested_links: {},
-            image: team1,
-        },
-        "Vice Chancellor": {
-            url: "",
-            nested_links: {
-                "DSAC Club": "http://www.sanjayghodawatuniversity.ac.in/dsac"
-            },
-            image: team1,
-        },
-        "Registrar": {
-            url: "Sports",
-            nested_links: {},
-            image: team1,
-        },
-        "Head of School": {
-            url: "",  // Not Found
-            nested_links: {},
-            image: team1,
-        },
-        "Administrative Department": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
-            nested_links: {},
-            image: team1,
-        },
-        "Admission & Marketing Cell": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
-            nested_links: {},
-            image: team1,
-        },
-        "IT Cell": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
-            nested_links: {},
-            image: team1,
-        },
-        "Transport Department": {
-            url: "http://www.sanjayghodawatuniversity.ac.in/students-activities",
-            nested_links: {},
-            image: team1,
-        },
-
-    },
     "Training & Placement": {
         "About Training & Placement": {
             url: "http://www.sanjayghodawatuniversity.ac.in/tp-about",

@@ -328,6 +328,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  max-height: 600px;
   display: grid;
   grid-template-columns: 0.8fr 1fr max-content;
   position: absolute;
@@ -350,6 +351,7 @@ body {
 }
 .navigation .navigation-menu .sub-menu {
   padding-top: 50px;
+  overflow-y: auto;
   padding-left: 50px;
 }
 .navigation .navigation-menu .sub-menu .sub-menu-pill {
