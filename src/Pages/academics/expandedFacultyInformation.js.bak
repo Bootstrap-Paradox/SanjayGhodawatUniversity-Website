@@ -869,6 +869,19 @@ export const expandedFacultyInformation = {
         },
         "achievements": {
             builder: [
+				{
+                    "ExpandableLayouter": {
+                        expandableData: [
+                            {
+                                "Students Achievements": [
+                                    "Mr. Shridatt Patil achieved Bronze medal in 2nd Open National JUDO Championship 2018-19 ",
+                                    "Mr. Aayush Chavan, Mr. Sagar Patil, Ms.Aishwarya Katkar, Ms.Himani Chougule participated IIT Bombay-Boeing Aeromodelling competition",
+                                ]
+                            }
+                        ]
+                    }
+                }
+
 
             ]
         },
@@ -878,10 +891,51 @@ export const expandedFacultyInformation = {
                     "ExpandableLayouter": {
                         expandableData: [
                             {
-                                "International Conference Attended ": [
+                                "International Conference Attended": [
                                     "S.V.Khandal, Balaji.K, V.V.Kulkarni, N.S.Desai, Aishwarya Mukund Katkar, Shubham Rajaram Mali on International conference on advance in power generation from renewable energy Sources, Banswara(Rajasthan) on 11th 12th February 2019. Title of Article - Effect of preheating the cotton seed Biodiesel on the performance of diesel engine.",
-                                ]
-								
+                                ],
+								"National Conference Attended": [
+                                    "Sangamsinh Jadhav, Ruturaj Patil, S.V. Khandal, T. B. Shinde, N.V. Sabnis, N.S. Desai National Conference on Innovative Trends in Engineering and Technology, Solapur on 15th -16th March 2019. Title of Article - Performance of Biodiesel Powered Diesel Engine with Different Injection Strategies",
+                                    "Vaishnavi Shivkumar Hirekodi, Jyoti Mahantesh Mangasuli, S.V. Khandal, Balaji. K National Conference on Innovative Trends in Engineering and Technology, Solapur on 15th -16th March 2019. Title of Article - Effect of Fuel Injection Timing, Injection Pressure and Combustion Chamber Shapes on the Performance of Diesel Engine Run on Biodiesel",
+                                ],
+								"Seminars / Workshops Attended": [
+                                    "Sagar Anil Patil, Vishwajeet Anil Subhedar has participated in International Workshop on Life in Space organized by Indian Astrobiology Research Foundation held on 17th March 2019",
+                                    "National Seminar on Industry 4.0- Preparedness of Manufacturing Industry and Academia on 19th January 2019",
+									"Effective Students Engagement in Learning Through Active Learning Techniques on 11th -12th January 2019",
+                                ],
+								"Workshops / Programs Conducted": [
+                                    "Glider Competition was organised on 24th February 2019",
+									"Water Rocket Competition was organised on 25th February 2019",
+									"Kite competition was organised on 25th January 2019",
+									"Paper Plane Competition was organised on 11th February 2019",
+									"Aeromodelling Workshop was organised on 31st October 2018",
+									"Poster Competition was organised on 7th September 2018",
+								],
+								"Guest / Expert Lectures": [
+                                    "A Guest Lecture was organised on Drone Making by Mr. Shrinivasalu Reddy, COE of Skycraft Technologies",
+									"A Guest Lecture was organised on Current Trends in Aeronautical on 30/08/2019 by Mr. Yuvraj",
+									"A Guest Lecture was organised on Recovery Payload Device for Tethered Aerostats on 30/09/2019 by Dr. Rajkumar Pant, IIT Mumbai.",
+									"A Two Days Guest Lecture was organised on NASTRAN/ PATRAN on 22/09/2019 and 23/09/2019 by Mr. G. Mari Prabhu",
+									"A Guest Lecture was organised on Application of Carbon Composites on 14/10/2019 by Mr. Rushikesh Deshpande ",
+									"A Guest Lecture was organised on Introduction to IPR on 11/10/2019 by Mr. Devendra Gowda",
+									"A Guest Lecture was organised on Industry 4.0 Application on 23/01/2020 by Mr. Atul Marathe",
+									"A Guest Lecture was organised on Alarus Aircraft maintenance on 09/03/2019",
+									"A Guest Lecture was organised on Advanced Trends in Aerodynamics on 06/03/2019",
+									"A Guest Lecture was organised on Recent Trends on Aerospace in Structures on 15/01/2019",
+									"A Guest Lecture was organised on Aero modeling of Fixed and Rotary wing R/C Aircraft on 09/09/2018",
+									"A Guest Lecture was organised on Robotics on 18/07/2018",
+									"A Guest Lecture was organised on Introduction to Aerodynamics on 17/07/2018",
+									"A Guest Lecture was organised on Introduction to Aeronautical Engineering on 16/07/2018",
+									],
+								"Internship Program": [
+                                    "Ten Days Internship Program on Aviation in Association With Star Air, Bangalore from 15th to 24th June 2019",
+                                  ],
+								"Industrial Visits ": [
+                                    "Visit to Star Air at Chipri on 05th August 2022 ",
+									"Visit to Star Air at Chipri on 26th July 2022",
+									"Visit to U R RAO SATELLITE CENTRE (ISRO) & HAL Museum at Bangalore on 27th & 28th May 2022 ",
+                                  ],
+																
                             }
                         ]
                     }
@@ -894,10 +948,10 @@ export const expandedFacultyInformation = {
                     "ExpandableLayouter": {
                         expandableData: [
                             {
-                                "Publications": [
-                                    "Publications for AY 2018-19.",
-                                    "Publications for AY 2019-20.",
-                                    "Publications for AY 2020-21.",
+                                "Students Publications": [
+                                    "Sagar Anil Patil, Vishwajeet Anil Subhedar, S.V. Khandal, Balaji. K, S. Saranya. Review on Application of Drones in Agriculture. International conference on Recent Developments in Engineering Management Sciences and Technology (ICRDET'19), Chennai (Tamilnadu) on 16th March 2019. (Under Process)",
+                                    "Vaishnavi Shivkumar Hirekodi, Jyoti Mahantesh Mangasuli, S.V. Khandal,Balaji. K. Journal Details - ISBN:978-95-87901-02-05, Title of Article - Effect of Fuel Injection Timing, Injection Pressure and Combustion Chamber Shapes on the Performance of Diesel Engine Run on Biodiesel ",
+                                    "S.V.Khandal, Balaji.K, V.V.Kulkarni, N.S.Desai, Aishwarya Mukund Katkar,Shubham Rajaram Mali. Journal Details - Under Process. Title of Article - Effect of preheating the cotton seed Biodiesel on the performance of diesel engine",
 
                                 ]
                             }
@@ -1095,6 +1149,50 @@ export const expandedFacultyInformation = {
         },
         "photo-gallery": {
             builder: [
+				"ColumnLayouter": {
+                        component: "DisplayImage",
+                        componentData: [
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                            {
+                                "title": "Computer Lab"
+                            },
+                            {
+                                "title": "Data Science Lab"
+                            },
+                            {
+                                "title": "Database Lab"
+                            },
+                        ]
+
+                    }
+    
+	
 
             ]
         },
@@ -1583,6 +1681,7 @@ export const expandedFacultyInformation = {
         },
         "photo-gallery": {
             builder: [
+
 
             ]
         },
